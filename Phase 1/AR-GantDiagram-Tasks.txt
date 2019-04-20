@@ -1,0 +1,11 @@
+Configuração da camada de acesso e definição da interligação/endereçamento dos equipamentos 
+Configuração das redes locais virtuais (VLAN) e trunks 
+Configuração do encaminhamento unicast IPv4 e IPV6  
+Configuração da política de encaminhamento pela ligação de micro-ondas 
+Implementação de mecanismos de tradução de endereços privados 
+Configuração de um servidor DHCPv4 para pelos menos 4 VLAN 
+Configuração do(s) servidor(es) DNS/DNSSEC da empresa 
+Configuração de mecanismos de transição IPv6/IPv4 
+Configuração das ligações seguras dentro e entre polos (e respetivo encaminhamento) 
+Implementação de políticas de QdS
+Extras

@@ -1,0 +1,23 @@
+Diagrama de Rede
+- Planear 1 edifício, replicar nos restantes
+- Cada um dos pólos é um enterprise campus
+- Comunicação entre Entreprise Campus pela Internet
+- Redundância dupla e não fugir disso
+
+Definição de VLANS
+- VLANs em função do serviço e de quem usa
+- VLANs partidas por campus [cada um dos pólos] -> serviço -> utilizadores -> edificio/piso? 
+- + IPs para Core (point to point)
+- VLANs devem ser locais, excepto a VLAN de administração (VLAN1) e para máquinas móveis (Wireless)
+- On Wireless:
+	- Have 1 for guests, 1 for employees with more privileges, 1 for employees with less privileges
+- On Datacenters:
+	- Local Datacenters 20-30
+	- Use mask /24 (~250 machines)
+
+Escolher equipamentos: 
+1. Numero de portas e numero de portas PoE
+2. A partir dai, sabendo o trafego, factores de simultaneidade e de crescimento, calcular as características de cada switch
+3. Verificar se tem NAT, OSPF, RIP, IPSec, etc.
+
+
