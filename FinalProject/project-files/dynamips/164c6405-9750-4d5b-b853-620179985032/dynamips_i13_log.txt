@@ -1,0 +1,42 @@
+Jun 17 18:51:06.755 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 18:51:06.755 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 3673.
+Jun 17 18:51:07.246 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 18:51:07.246 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 18:51:07.247 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 18:51:07.247 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\83c70b35-9f3e-498c-882a-f962df2a73b6 
+Jun 17 18:51:07.247 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\83c70b35-9f3e-498c-882a-f962df2a73b6
+Jun 17 18:51:07.247 HYPERVISOR: exec_cmd: vm create ANTENNA_LISBON 15 c7200 
+Jun 17 18:51:07.248 VM: VM ANTENNA_LISBON created.
+Jun 17 18:51:07.248 HYPERVISOR: exec_cmd: vm set_con_tcp_port ANTENNA_LISBON 5037 
+Jun 17 18:51:07.248 HYPERVISOR: exec_cmd: c7200 get_mac_addr ANTENNA_LISBON 
+Jun 17 18:51:07.249 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 18:51:07.249 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENNA_LISBON 0 0 C7200-IO-FE 
+Jun 17 18:51:07.249 HYPERVISOR: exec_cmd: vm set_disk0 ANTENNA_LISBON 0 
+Jun 17 18:51:07.249 HYPERVISOR: exec_cmd: vm set_exec_area ANTENNA_LISBON 64 
+Jun 17 18:51:07.250 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 18:51:07.250 HYPERVISOR: exec_cmd: vm set_idle_pc ANTENNA_LISBON 0x601712a8 
+Jun 17 18:51:07.251 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_LISBON C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 18:51:07.251 HYPERVISOR: exec_cmd: c7200 set_mac_addr ANTENNA_LISBON ca0f.3ef4.0000 
+Jun 17 18:51:07.251 HYPERVISOR: exec_cmd: vm set_nvram ANTENNA_LISBON 512 
+Jun 17 18:51:07.252 HYPERVISOR: exec_cmd: vm set_ram ANTENNA_LISBON 512 
+Jun 17 18:51:07.252 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 18:51:07.252 HYPERVISOR: exec_cmd: vm slot_remove_binding ANTENNA_LISBON 0 0 
+Jun 17 18:51:07.252 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 18:51:07.253 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENNA_LISBON 0 0 C7200-IO-2FE 
+Jun 17 18:51:07.253 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 18:51:07.253 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENNA_LISBON 1 0 PA-2FE-TX 
+Jun 17 18:51:17.502 HYPERVISOR: exec_cmd: nio create_udp udp-81360750-0ff1-472b-bdb6-301b9babad89 10054 127.0.0.1 10055 
+Jun 17 18:51:18.044 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ANTENNA_LISBON 0 0 udp-81360750-0ff1-472b-bdb6-301b9babad89 
+Jun 17 18:51:18.044 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 18:51:18.138 HYPERVISOR: exec_cmd: nio create_udp udp-e9b45b40-a0cf-438c-9788-040f3a86a5ea 10058 127.0.0.1 10059 
+Jun 17 18:51:18.141 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ANTENNA_LISBON 0 1 udp-e9b45b40-a0cf-438c-9788-040f3a86a5ea 
+Jun 17 18:51:18.141 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 19:51:15.565 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 19:51:15.569 HYPERVISOR: exec_cmd: vm extract_config ANTENNA_LISBON 
+Jun 17 19:51:16.326 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 19:51:16.330 HYPERVISOR: exec_cmd: vm extract_config ANTENNA_LISBON 
+Jun 17 19:51:16.346 HYPERVISOR: exec_cmd: vm delete ANTENNA_LISBON 
+Jun 17 19:51:16.346 VM: VM ANTENNA_LISBON destroyed.
+Jun 17 19:51:16.382 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 17 19:51:16.547 HYPERVISOR: Stopped.
+Jun 17 19:51:16.547 GENERAL: reset done.

@@ -1,0 +1,40 @@
+Jun 17 18:51:08.372 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 18:51:08.373 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 3683.
+Jun 17 18:51:08.863 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 18:51:08.863 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 18:51:08.864 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 18:51:08.864 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\098f7117-4e70-4166-a630-75e698edd6f2 
+Jun 17 18:51:08.864 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\098f7117-4e70-4166-a630-75e698edd6f2
+Jun 17 18:51:08.864 HYPERVISOR: exec_cmd: vm create SCIENTIFIC_SWL3_1 6 c3725 
+Jun 17 18:51:08.875 VM: VM SCIENTIFIC_SWL3_1 created.
+Jun 17 18:51:08.876 HYPERVISOR: exec_cmd: vm set_con_tcp_port SCIENTIFIC_SWL3_1 5028 
+Jun 17 18:51:08.876 HYPERVISOR: exec_cmd: c3725 get_mac_addr SCIENTIFIC_SWL3_1 
+Jun 17 18:51:08.876 HYPERVISOR: exec_cmd: vm set_disk0 SCIENTIFIC_SWL3_1 1 
+Jun 17 18:51:08.876 HYPERVISOR: exec_cmd: vm set_exec_area SCIENTIFIC_SWL3_1 64 
+Jun 17 18:51:08.876 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 17 18:51:08.877 HYPERVISOR: exec_cmd: vm set_idle_pc SCIENTIFIC_SWL3_1 0x60a6a1e0 
+Jun 17 18:51:08.877 HYPERVISOR: exec_cmd: vm set_ios SCIENTIFIC_SWL3_1 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 18:51:08.878 HYPERVISOR: exec_cmd: c3725 set_mac_addr SCIENTIFIC_SWL3_1 c206.4834.0000 
+Jun 17 18:51:08.878 HYPERVISOR: exec_cmd: vm set_nvram SCIENTIFIC_SWL3_1 256 
+Jun 17 18:51:08.878 HYPERVISOR: exec_cmd: vm set_ram SCIENTIFIC_SWL3_1 256 
+Jun 17 18:51:08.878 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 17 18:51:08.879 HYPERVISOR: exec_cmd: vm slot_add_binding SCIENTIFIC_SWL3_1 1 0 NM-16ESW 
+Jun 17 18:51:08.879 HYPERVISOR: exec_cmd: vm set_con_tcp_port SCIENTIFIC_SWL3_1 5028 
+Jun 17 18:51:20.396 HYPERVISOR: exec_cmd: nio create_udp udp-e3255fa4-ca04-4d5d-8462-8b0f679e415c 10082 127.0.0.1 10083 
+Jun 17 18:51:20.939 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_SWL3_1 1 15 udp-e3255fa4-ca04-4d5d-8462-8b0f679e415c 
+Jun 17 18:51:20.940 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 17 18:51:22.936 HYPERVISOR: exec_cmd: nio create_udp udp-0811ca36-7c75-4078-bb29-1d45054e31d2 10098 127.0.0.1 10099 
+Jun 17 18:51:22.939 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_SWL3_1 1 0 udp-0811ca36-7c75-4078-bb29-1d45054e31d2 
+Jun 17 18:51:22.939 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 17 18:51:23.571 HYPERVISOR: exec_cmd: nio create_udp udp-1f6a9495-b93e-433d-998e-cc0542431a0d 10104 127.0.0.1 10105 
+Jun 17 18:51:23.573 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_SWL3_1 1 1 udp-1f6a9495-b93e-433d-998e-cc0542431a0d 
+Jun 17 18:51:23.574 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 17 19:51:15.585 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 17 19:51:15.589 HYPERVISOR: exec_cmd: vm extract_config SCIENTIFIC_SWL3_1 
+Jun 17 19:51:16.326 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 17 19:51:16.326 HYPERVISOR: exec_cmd: vm extract_config SCIENTIFIC_SWL3_1 
+Jun 17 19:51:16.346 HYPERVISOR: exec_cmd: vm delete SCIENTIFIC_SWL3_1 
+Jun 17 19:51:16.346 VM: VM SCIENTIFIC_SWL3_1 destroyed.
+Jun 17 19:51:16.374 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 17 19:51:16.635 HYPERVISOR: Stopped.
+Jun 17 19:51:16.635 GENERAL: reset done.

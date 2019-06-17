@@ -1,0 +1,25 @@
+Jun 17 18:51:03.663 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 18:51:03.664 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 3649.
+Jun 17 18:51:04.156 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 18:51:04.157 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 18:51:04.157 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 18:51:04.157 HYPERVISOR: exec_cmd: ethsw create SCIENTIFIC_SW 
+Jun 17 18:51:14.321 HYPERVISOR: exec_cmd: nio create_udp udp-8e0a7cb8-e208-4aa9-8e18-d7a484ee2d55 10017 127.0.0.1 10016 
+Jun 17 18:51:14.321 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-8e0a7cb8-e208-4aa9-8e18-d7a484ee2d55 
+Jun 17 18:51:14.340 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-8e0a7cb8-e208-4aa9-8e18-d7a484ee2d55 1 
+Jun 17 18:51:14.430 HYPERVISOR: exec_cmd: nio create_udp udp-af52e6cf-f02a-4f8c-96cc-8bf29c19a053 10019 127.0.0.1 10018 
+Jun 17 18:51:14.430 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-af52e6cf-f02a-4f8c-96cc-8bf29c19a053 
+Jun 17 18:51:14.444 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-af52e6cf-f02a-4f8c-96cc-8bf29c19a053 1 
+Jun 17 18:51:14.530 HYPERVISOR: exec_cmd: nio create_udp udp-db1aabcf-80de-4fcf-ad8b-9f0c5b7513d4 10021 127.0.0.1 10020 
+Jun 17 18:51:14.530 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-db1aabcf-80de-4fcf-ad8b-9f0c5b7513d4 
+Jun 17 18:51:14.549 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-db1aabcf-80de-4fcf-ad8b-9f0c5b7513d4 1 
+Jun 17 18:51:19.725 HYPERVISOR: exec_cmd: nio create_udp udp-1e5bd69e-4a45-433c-8188-c4b69d743a00 10076 127.0.0.1 10077 
+Jun 17 18:51:19.725 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-1e5bd69e-4a45-433c-8188-c4b69d743a00 
+Jun 17 18:51:19.742 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-1e5bd69e-4a45-433c-8188-c4b69d743a00 1 
+Jun 17 18:51:20.375 HYPERVISOR: exec_cmd: nio create_udp udp-f0a95845-d129-4f30-a0d1-6a97201d25c3 10080 127.0.0.1 10081 
+Jun 17 18:51:20.375 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-f0a95845-d129-4f30-a0d1-6a97201d25c3 
+Jun 17 18:51:20.389 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-f0a95845-d129-4f30-a0d1-6a97201d25c3 1 
+Jun 17 19:51:16.196 HYPERVISOR: exec_cmd: ethsw delete SCIENTIFIC_SW 
+Jun 17 19:51:16.296 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 17 19:51:16.386 HYPERVISOR: Stopped.
+Jun 17 19:51:16.386 GENERAL: reset done.

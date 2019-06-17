@@ -1,1 +1,0 @@
-Jun 17 15:20:21.822 VM: renamed from 'ESW1' to 'DMZ_SWL1'Jun 17 16:20:29.889 VM: renamed from 'DMZ_SWL1' to 'DMZ_SWL3_1'
