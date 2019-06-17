@@ -1,0 +1,27 @@
+vlan database
+vlan 1
+vlan 224
+exit
+
+conf t
+
+int vlan 224
+no shut
+ip address 10.112.0.10 255.255.128.0
+
+int f0/0
+no shut
+ip address 10.112.0.6 255.248.0
+
+int f0/1
+no shut
+ip address 10.112.0.8 255.248.0
+
+int range f1/0-5
+no shut
+switchport mode trunk
+switchport trunk allowed vlan 1,224
+
+end
+write
+

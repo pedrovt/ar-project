@@ -1,0 +1,11 @@
+conf t
+
+int f0/0
+no shut
+
+int f1/0
+no shut
+
+end
+write
+

@@ -1,0 +1,16 @@
+conf t
+
+int f1/0
+no shut
+ip address 10.112.0.3 255.248.0
+
+int f1/1
+no shut
+ip address 10.112.0.4 255.248.0
+
+int f0/0
+no shut
+
+end
+write
+
