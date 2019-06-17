@@ -1,0 +1,45 @@
+Jun 10 12:49:32.694 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 10 12:49:32.695 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 19097.
+Jun 10 12:49:33.177 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 12:49:33.178 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 10 12:49:33.178 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 10 12:49:33.178 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\d6e9bf5e-3919-4fa5-97f4-b3df20a097b2 
+Jun 10 12:49:33.186 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\d6e9bf5e-3919-4fa5-97f4-b3df20a097b2
+Jun 10 12:49:33.187 HYPERVISOR: exec_cmd: vm create SCIENTIFIC_R2 5 c7200 
+Jun 10 12:49:33.188 VM: VM SCIENTIFIC_R2 created.
+Jun 10 12:49:33.188 HYPERVISOR: exec_cmd: vm set_con_tcp_port SCIENTIFIC_R2 5010 
+Jun 10 12:49:33.188 HYPERVISOR: exec_cmd: c7200 get_mac_addr SCIENTIFIC_R2 
+Jun 10 12:49:33.189 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:49:33.189 HYPERVISOR: exec_cmd: vm slot_add_binding SCIENTIFIC_R2 0 0 C7200-IO-FE 
+Jun 10 12:49:33.189 HYPERVISOR: exec_cmd: vm set_disk0 SCIENTIFIC_R2 0 
+Jun 10 12:49:33.190 HYPERVISOR: exec_cmd: vm set_exec_area SCIENTIFIC_R2 64 
+Jun 10 12:49:33.190 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:49:33.190 HYPERVISOR: exec_cmd: vm set_idle_pc SCIENTIFIC_R2 0x601712a8 
+Jun 10 12:49:33.191 HYPERVISOR: exec_cmd: vm set_ios SCIENTIFIC_R2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 10 12:49:33.191 HYPERVISOR: exec_cmd: c7200 set_mac_addr SCIENTIFIC_R2 ca05.6892.0000 
+Jun 10 12:49:33.192 HYPERVISOR: exec_cmd: vm set_nvram SCIENTIFIC_R2 512 
+Jun 10 12:49:33.192 HYPERVISOR: exec_cmd: vm set_ram SCIENTIFIC_R2 512 
+Jun 10 12:49:33.192 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:49:33.193 HYPERVISOR: exec_cmd: vm slot_remove_binding SCIENTIFIC_R2 0 0 
+Jun 10 12:49:33.193 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:49:33.193 HYPERVISOR: exec_cmd: vm slot_add_binding SCIENTIFIC_R2 0 0 C7200-IO-2FE 
+Jun 10 12:49:33.193 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:49:33.193 HYPERVISOR: exec_cmd: vm slot_add_binding SCIENTIFIC_R2 1 0 PA-2FE-TX 
+Jun 10 12:49:43.850 HYPERVISOR: exec_cmd: nio create_udp udp-3af47889-200e-443a-8c4b-5407a39295ad 10024 127.0.0.1 10025 
+Jun 10 12:49:44.394 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_R2 0 1 udp-3af47889-200e-443a-8c4b-5407a39295ad 
+Jun 10 12:49:44.394 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:49:45.048 HYPERVISOR: exec_cmd: nio create_udp udp-d602039a-479f-47e4-a4a6-fd2ecc5e5d1d 10030 127.0.0.1 10031 
+Jun 10 12:49:45.051 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_R2 0 0 udp-d602039a-479f-47e4-a4a6-fd2ecc5e5d1d 
+Jun 10 12:49:45.051 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:49:48.252 HYPERVISOR: exec_cmd: nio create_udp udp-71c53a13-0cc6-43e5-bff7-fd259254c441 10094 127.0.0.1 10095 
+Jun 10 12:49:48.255 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_R2 1 0 udp-71c53a13-0cc6-43e5-bff7-fd259254c441 
+Jun 10 12:49:48.255 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:50:05.214 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:50:05.216 HYPERVISOR: exec_cmd: vm extract_config SCIENTIFIC_R2 
+Jun 10 12:50:05.934 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_R2 
+Jun 10 12:50:05.935 HYPERVISOR: exec_cmd: vm extract_config SCIENTIFIC_R2 
+Jun 10 12:50:05.935 HYPERVISOR: exec_cmd: vm delete SCIENTIFIC_R2 
+Jun 10 12:50:05.936 VM: VM SCIENTIFIC_R2 destroyed.
+Jun 10 12:50:05.945 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 10 12:50:06.221 HYPERVISOR: Stopped.
+Jun 10 12:50:06.222 GENERAL: reset done.

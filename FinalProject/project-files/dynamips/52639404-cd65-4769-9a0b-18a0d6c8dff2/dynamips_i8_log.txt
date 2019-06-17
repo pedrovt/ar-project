@@ -1,0 +1,45 @@
+Jun 10 12:49:33.243 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 10 12:49:33.244 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 19100.
+Jun 10 12:49:33.740 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 12:49:33.741 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 10 12:49:33.741 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 10 12:49:33.741 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\5bbf4eea-942e-41aa-9e1d-8396086a9cf0 
+Jun 10 12:49:33.744 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\5bbf4eea-942e-41aa-9e1d-8396086a9cf0
+Jun 10 12:49:33.745 HYPERVISOR: exec_cmd: vm create SERVICES_R1 6 c7200 
+Jun 10 12:49:33.746 VM: VM SERVICES_R1 created.
+Jun 10 12:49:33.747 HYPERVISOR: exec_cmd: vm set_con_tcp_port SERVICES_R1 5011 
+Jun 10 12:49:33.747 HYPERVISOR: exec_cmd: c7200 get_mac_addr SERVICES_R1 
+Jun 10 12:49:33.747 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:49:33.747 HYPERVISOR: exec_cmd: vm slot_add_binding SERVICES_R1 0 0 C7200-IO-FE 
+Jun 10 12:49:33.748 HYPERVISOR: exec_cmd: vm set_disk0 SERVICES_R1 0 
+Jun 10 12:49:33.748 HYPERVISOR: exec_cmd: vm set_exec_area SERVICES_R1 64 
+Jun 10 12:49:33.749 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:49:33.749 HYPERVISOR: exec_cmd: vm set_idle_pc SERVICES_R1 0x601712a8 
+Jun 10 12:49:33.750 HYPERVISOR: exec_cmd: vm set_ios SERVICES_R1 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 10 12:49:33.750 HYPERVISOR: exec_cmd: c7200 set_mac_addr SERVICES_R1 ca06.68a1.0000 
+Jun 10 12:49:33.751 HYPERVISOR: exec_cmd: vm set_nvram SERVICES_R1 512 
+Jun 10 12:49:33.751 HYPERVISOR: exec_cmd: vm set_ram SERVICES_R1 512 
+Jun 10 12:49:33.751 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:49:33.752 HYPERVISOR: exec_cmd: vm slot_remove_binding SERVICES_R1 0 0 
+Jun 10 12:49:33.752 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:49:33.752 HYPERVISOR: exec_cmd: vm slot_add_binding SERVICES_R1 0 0 C7200-IO-2FE 
+Jun 10 12:49:33.752 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:49:33.753 HYPERVISOR: exec_cmd: vm slot_add_binding SERVICES_R1 1 0 PA-2FE-TX 
+Jun 10 12:49:45.230 HYPERVISOR: exec_cmd: nio create_udp udp-98afbde1-8d2c-40ed-8650-e2a975edf180 10042 127.0.0.1 10043 
+Jun 10 12:49:45.768 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_R1 0 0 udp-98afbde1-8d2c-40ed-8650-e2a975edf180 
+Jun 10 12:49:45.769 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:49:46.495 HYPERVISOR: exec_cmd: nio create_udp udp-ac0ce4af-8009-4b21-85a4-ec0f880662b7 10054 127.0.0.1 10055 
+Jun 10 12:49:46.498 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_R1 0 1 udp-ac0ce4af-8009-4b21-85a4-ec0f880662b7 
+Jun 10 12:49:46.498 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:49:48.352 HYPERVISOR: exec_cmd: nio create_udp udp-4d2e6d82-da29-4423-85be-b2a041199bbb 10098 127.0.0.1 10099 
+Jun 10 12:49:48.355 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_R1 1 0 udp-4d2e6d82-da29-4423-85be-b2a041199bbb 
+Jun 10 12:49:48.355 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:50:05.222 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:50:05.223 HYPERVISOR: exec_cmd: vm extract_config SERVICES_R1 
+Jun 10 12:50:05.808 HYPERVISOR: exec_cmd: vm get_status SERVICES_R1 
+Jun 10 12:50:05.809 HYPERVISOR: exec_cmd: vm extract_config SERVICES_R1 
+Jun 10 12:50:05.809 HYPERVISOR: exec_cmd: vm delete SERVICES_R1 
+Jun 10 12:50:05.810 VM: VM SERVICES_R1 destroyed.
+Jun 10 12:50:05.818 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 10 12:50:06.279 HYPERVISOR: Stopped.
+Jun 10 12:50:06.279 GENERAL: reset done.

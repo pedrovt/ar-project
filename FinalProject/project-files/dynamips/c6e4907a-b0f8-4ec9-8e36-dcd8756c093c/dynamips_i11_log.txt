@@ -1,0 +1,64 @@
+Jun 10 12:49:34.893 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 10 12:49:34.894 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 19111.
+Jun 10 12:49:35.380 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 12:49:35.380 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 10 12:49:35.380 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 10 12:49:35.381 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\c8bf011d-5210-497b-be23-e1e292cec56a 
+Jun 10 12:49:35.384 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\c8bf011d-5210-497b-be23-e1e292cec56a
+Jun 10 12:49:35.384 HYPERVISOR: exec_cmd: vm create AVEIRO_R2 9 c7200 
+Jun 10 12:49:35.386 VM: VM AVEIRO_R2 created.
+Jun 10 12:49:35.386 HYPERVISOR: exec_cmd: vm set_con_tcp_port AVEIRO_R2 5014 
+Jun 10 12:49:35.387 HYPERVISOR: exec_cmd: c7200 get_mac_addr AVEIRO_R2 
+Jun 10 12:49:35.387 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:35.387 HYPERVISOR: exec_cmd: vm slot_add_binding AVEIRO_R2 0 0 C7200-IO-FE 
+Jun 10 12:49:35.388 HYPERVISOR: exec_cmd: vm set_disk0 AVEIRO_R2 0 
+Jun 10 12:49:35.388 HYPERVISOR: exec_cmd: vm set_exec_area AVEIRO_R2 64 
+Jun 10 12:49:35.389 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:35.389 HYPERVISOR: exec_cmd: vm set_idle_pc AVEIRO_R2 0x601712a8 
+Jun 10 12:49:35.390 HYPERVISOR: exec_cmd: vm set_ios AVEIRO_R2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 10 12:49:35.390 HYPERVISOR: exec_cmd: c7200 set_mac_addr AVEIRO_R2 ca09.68e1.0000 
+Jun 10 12:49:35.390 HYPERVISOR: exec_cmd: vm set_nvram AVEIRO_R2 512 
+Jun 10 12:49:35.391 HYPERVISOR: exec_cmd: vm set_ram AVEIRO_R2 512 
+Jun 10 12:49:35.391 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:35.391 HYPERVISOR: exec_cmd: vm slot_remove_binding AVEIRO_R2 0 0 
+Jun 10 12:49:35.391 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:35.392 HYPERVISOR: exec_cmd: vm slot_add_binding AVEIRO_R2 0 0 C7200-IO-2FE 
+Jun 10 12:49:35.392 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:35.392 HYPERVISOR: exec_cmd: vm slot_add_binding AVEIRO_R2 1 0 PA-2FE-TX 
+Jun 10 12:49:35.393 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:35.393 HYPERVISOR: exec_cmd: vm slot_add_binding AVEIRO_R2 2 0 PA-2FE-TX 
+Jun 10 12:49:35.393 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:35.393 HYPERVISOR: exec_cmd: vm slot_add_binding AVEIRO_R2 3 0 PA-2FE-TX 
+Jun 10 12:49:44.403 HYPERVISOR: exec_cmd: nio create_udp udp-2b0d9ab0-2c50-4fb6-9bdc-fe6fe70438cf 10026 127.0.0.1 10027 
+Jun 10 12:49:44.955 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_R2 0 1 udp-2b0d9ab0-2c50-4fb6-9bdc-fe6fe70438cf 
+Jun 10 12:49:44.955 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:45.156 HYPERVISOR: exec_cmd: nio create_udp udp-caf2fe96-2c9d-4c2f-b593-cf8c75b47fee 10038 127.0.0.1 10039 
+Jun 10 12:49:45.159 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_R2 0 0 udp-caf2fe96-2c9d-4c2f-b593-cf8c75b47fee 
+Jun 10 12:49:45.159 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:46.506 HYPERVISOR: exec_cmd: nio create_udp udp-2d7c477e-f4ab-41de-8936-3ef298a062e1 10056 127.0.0.1 10057 
+Jun 10 12:49:46.509 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_R2 1 0 udp-2d7c477e-f4ab-41de-8936-3ef298a062e1 
+Jun 10 12:49:46.509 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:46.592 HYPERVISOR: exec_cmd: nio create_udp udp-1c44c3b2-b292-4c4f-bf61-32a8d0eb3c2a 10062 127.0.0.1 10063 
+Jun 10 12:49:46.594 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_R2 1 1 udp-1c44c3b2-b292-4c4f-bf61-32a8d0eb3c2a 
+Jun 10 12:49:46.594 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:47.300 HYPERVISOR: exec_cmd: nio create_udp udp-4ab20095-0140-475f-bf71-56fc2ccf09bc 10074 127.0.0.1 10075 
+Jun 10 12:49:47.302 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_R2 2 0 udp-4ab20095-0140-475f-bf71-56fc2ccf09bc 
+Jun 10 12:49:47.302 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:48.054 HYPERVISOR: exec_cmd: nio create_udp udp-3899d3b2-4d45-4f84-9b54-92477fa37bdb 10086 127.0.0.1 10087 
+Jun 10 12:49:48.056 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_R2 2 1 udp-3899d3b2-4d45-4f84-9b54-92477fa37bdb 
+Jun 10 12:49:48.057 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:50.520 HYPERVISOR: exec_cmd: nio create_udp udp-26bd9b57-5173-4bda-b31c-6a7c011943ee 10132 127.0.0.1 10133 
+Jun 10 12:49:50.523 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_R2 3 0 udp-26bd9b57-5173-4bda-b31c-6a7c011943ee 
+Jun 10 12:49:50.523 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:49:50.627 HYPERVISOR: exec_cmd: nio create_udp udp-e5182ed9-de10-40ae-b543-62da88437487 10138 127.0.0.1 10139 
+Jun 10 12:49:50.629 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AVEIRO_R2 3 1 udp-e5182ed9-de10-40ae-b543-62da88437487 
+Jun 10 12:49:50.629 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:50:05.231 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:50:05.232 HYPERVISOR: exec_cmd: vm extract_config AVEIRO_R2 
+Jun 10 12:50:05.992 HYPERVISOR: exec_cmd: vm get_status AVEIRO_R2 
+Jun 10 12:50:05.993 HYPERVISOR: exec_cmd: vm extract_config AVEIRO_R2 
+Jun 10 12:50:05.994 HYPERVISOR: exec_cmd: vm delete AVEIRO_R2 
+Jun 10 12:50:05.994 VM: VM AVEIRO_R2 destroyed.
+Jun 10 12:50:06.003 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 10 12:50:06.417 HYPERVISOR: Stopped.
+Jun 10 12:50:06.418 GENERAL: reset done.
