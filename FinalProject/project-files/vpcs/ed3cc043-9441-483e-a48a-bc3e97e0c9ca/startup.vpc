@@ -1,4 +1,4 @@
-# This the configuration for SERVICES_PC1
+# This the configuration for SERVICES_WIFI
 #
 # Uncomment the following line to enable DHCP
 # dhcp
@@ -6,4 +6,4 @@
 # ip 192.168.1.1 255.0.0.0
 #
 
-set pcname SERVICES_PC1
+set pcname SERVICES_WIFI
