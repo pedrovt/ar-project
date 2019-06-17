@@ -1,0 +1,46 @@
+Jun 17 14:34:14.949 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 14:34:14.949 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14304.
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 14:34:15.436 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\83c70b35-9f3e-498c-882a-f962df2a73b6 
+Jun 17 14:34:15.436 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\83c70b35-9f3e-498c-882a-f962df2a73b6
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm create R2 15 c7200 
+Jun 17 14:34:15.436 VM: VM R2 created.
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5037 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x601712a8 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 17 14:34:15.436 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Jun 17 14:34:15.545 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:34:19.195 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:34:40.341 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:34:45.159 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:34:45.159 HYPERVISOR: exec_cmd: vm rename R2 ANTENNA_LISBON 
+Jun 17 14:34:45.236 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_LISBON C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:34:45.330 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_LISBON C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:34:47.925 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_LISBON C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:34:52.997 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_LISBON C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:35:00.389 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_LISBON C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:35:03.161 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_LISBON C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:35:05.794 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_LISBON C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:35:13.624 HYPERVISOR: exec_cmd: nio create_udp udp-af30069c-0db2-4e69-aad2-1f90c81356f2 10174 127.0.0.1 10175 
+Jun 17 14:35:14.173 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ANTENNA_LISBON 0 0 udp-af30069c-0db2-4e69-aad2-1f90c81356f2 
+Jun 17 14:35:14.173 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 14:35:20.082 HYPERVISOR: exec_cmd: nio create_udp udp-942d3727-9da0-4456-9274-6eb044b79eca 10178 127.0.0.1 10179 
+Jun 17 14:35:20.100 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ANTENNA_LISBON 0 1 udp-942d3727-9da0-4456-9274-6eb044b79eca 
+Jun 17 14:35:20.100 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 16:19:58.992 HYPERVISOR: exec_cmd: vm get_status ANTENNA_LISBON 
+Jun 17 16:19:58.992 HYPERVISOR: exec_cmd: vm extract_config ANTENNA_LISBON 

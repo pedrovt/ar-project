@@ -1,0 +1,71 @@
+Jun 17 14:00:41.481 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 14:00:41.482 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 13336.
+Jun 17 14:00:41.978 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 14:00:41.978 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 14:00:41.978 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 14:00:41.978 HYPERVISOR: exec_cmd: ethsw create SCIENTIFIC_SW 
+Jun 17 14:00:51.092 HYPERVISOR: exec_cmd: nio create_udp udp-a635a341-775b-407a-a274-b10380124631 10088 127.0.0.1 10089 
+Jun 17 14:00:51.092 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-a635a341-775b-407a-a274-b10380124631 
+Jun 17 14:00:51.109 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-a635a341-775b-407a-a274-b10380124631 1 
+Jun 17 14:00:51.167 HYPERVISOR: exec_cmd: nio create_udp udp-1fc5e0fe-cde4-44af-a8ce-45842db892ee 10092 127.0.0.1 10093 
+Jun 17 14:00:51.167 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-1fc5e0fe-cde4-44af-a8ce-45842db892ee 
+Jun 17 14:00:51.177 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-1fc5e0fe-cde4-44af-a8ce-45842db892ee 1 
+Jun 17 14:00:51.457 HYPERVISOR: exec_cmd: nio create_udp udp-8ed63937-0dde-4eda-8db9-26ef6546be23 10105 127.0.0.1 10104 
+Jun 17 14:00:51.457 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-8ed63937-0dde-4eda-8db9-26ef6546be23 
+Jun 17 14:00:51.462 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-8ed63937-0dde-4eda-8db9-26ef6546be23 1 
+Jun 17 14:00:51.527 HYPERVISOR: exec_cmd: nio create_udp udp-a48eaeb4-cc12-42e3-a864-31f00ae1c1f6 10107 127.0.0.1 10106 
+Jun 17 14:00:51.527 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-a48eaeb4-cc12-42e3-a864-31f00ae1c1f6 
+Jun 17 14:00:51.562 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-a48eaeb4-cc12-42e3-a864-31f00ae1c1f6 1 
+Jun 17 14:00:51.627 HYPERVISOR: exec_cmd: nio create_udp udp-a281c00e-cb59-4486-bcf6-c26c93546c5b 10109 127.0.0.1 10108 
+Jun 17 14:00:51.627 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-a281c00e-cb59-4486-bcf6-c26c93546c5b 
+Jun 17 14:00:51.637 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-a281c00e-cb59-4486-bcf6-c26c93546c5b 1 
+Jun 17 14:40:52.566 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-a635a341-775b-407a-a274-b10380124631 
+Jun 17 14:40:52.597 HYPERVISOR: exec_cmd: nio delete udp-a635a341-775b-407a-a274-b10380124631 
+Jun 17 14:40:55.943 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-1fc5e0fe-cde4-44af-a8ce-45842db892ee 
+Jun 17 14:40:55.959 HYPERVISOR: exec_cmd: nio delete udp-1fc5e0fe-cde4-44af-a8ce-45842db892ee 
+Jun 17 14:44:15.652 HYPERVISOR: exec_cmd: nio create_udp udp-59ee96a4-5ed4-433c-a501-f8e78b9b6fb0 10024 127.0.0.1 10025 
+Jun 17 14:44:15.652 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-59ee96a4-5ed4-433c-a501-f8e78b9b6fb0 
+Jun 17 14:44:15.681 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-59ee96a4-5ed4-433c-a501-f8e78b9b6fb0 1 
+Jun 17 14:44:18.546 HYPERVISOR: exec_cmd: nio create_udp udp-5a8204d6-8dfd-425f-8f23-ef333e23bfa1 10028 127.0.0.1 10029 
+Jun 17 14:44:18.546 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-5a8204d6-8dfd-425f-8f23-ef333e23bfa1 
+Jun 17 14:44:18.578 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-5a8204d6-8dfd-425f-8f23-ef333e23bfa1 1 
+Jun 17 14:44:54.206 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-5a8204d6-8dfd-425f-8f23-ef333e23bfa1 
+Jun 17 14:44:54.237 HYPERVISOR: exec_cmd: nio delete udp-5a8204d6-8dfd-425f-8f23-ef333e23bfa1 
+Jun 17 14:44:58.928 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-59ee96a4-5ed4-433c-a501-f8e78b9b6fb0 
+Jun 17 14:44:58.975 HYPERVISOR: exec_cmd: nio delete udp-59ee96a4-5ed4-433c-a501-f8e78b9b6fb0 
+Jun 17 14:45:38.011 HYPERVISOR: exec_cmd: nio create_udp udp-6547685d-2974-4acd-b8b1-9b1507d4d4cc 10032 127.0.0.1 10033 
+Jun 17 14:45:38.011 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-6547685d-2974-4acd-b8b1-9b1507d4d4cc 
+Jun 17 14:45:38.028 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-6547685d-2974-4acd-b8b1-9b1507d4d4cc 1 
+Jun 17 14:45:45.016 HYPERVISOR: exec_cmd: nio create_udp udp-b17708b7-c2e8-4871-abea-64edaf1810f7 10036 127.0.0.1 10037 
+Jun 17 14:45:45.016 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-b17708b7-c2e8-4871-abea-64edaf1810f7 
+Jun 17 14:45:45.047 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-b17708b7-c2e8-4871-abea-64edaf1810f7 1 
+Jun 17 14:50:28.083 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-6547685d-2974-4acd-b8b1-9b1507d4d4cc 
+Jun 17 14:50:28.114 HYPERVISOR: exec_cmd: nio delete udp-6547685d-2974-4acd-b8b1-9b1507d4d4cc 
+Jun 17 14:50:29.769 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-b17708b7-c2e8-4871-abea-64edaf1810f7 
+Jun 17 14:50:29.800 HYPERVISOR: exec_cmd: nio delete udp-b17708b7-c2e8-4871-abea-64edaf1810f7 
+Jun 17 14:51:01.409 HYPERVISOR: exec_cmd: nio create_udp udp-15acfe5c-277e-4e07-a501-0493e6371314 10032 127.0.0.1 10033 
+Jun 17 14:51:01.409 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-15acfe5c-277e-4e07-a501-0493e6371314 
+Jun 17 14:51:01.440 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-15acfe5c-277e-4e07-a501-0493e6371314 1 
+Jun 17 14:51:04.362 HYPERVISOR: exec_cmd: nio create_udp udp-a6df753f-8d44-4b4b-9e73-5c88dd51ac68 10036 127.0.0.1 10037 
+Jun 17 14:51:04.362 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-a6df753f-8d44-4b4b-9e73-5c88dd51ac68 
+Jun 17 14:51:04.378 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-a6df753f-8d44-4b4b-9e73-5c88dd51ac68 1 
+Jun 17 14:51:11.475 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-a6df753f-8d44-4b4b-9e73-5c88dd51ac68 
+Jun 17 14:51:11.506 HYPERVISOR: exec_cmd: nio delete udp-a6df753f-8d44-4b4b-9e73-5c88dd51ac68 
+Jun 17 14:51:14.374 HYPERVISOR: exec_cmd: nio create_udp udp-be818b95-b00b-4df9-89d0-b5598cb0a2ad 10036 127.0.0.1 10037 
+Jun 17 14:51:14.374 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-be818b95-b00b-4df9-89d0-b5598cb0a2ad 
+Jun 17 14:51:14.405 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-be818b95-b00b-4df9-89d0-b5598cb0a2ad 1 
+Jun 17 14:51:30.692 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-15acfe5c-277e-4e07-a501-0493e6371314 
+Jun 17 14:51:30.723 HYPERVISOR: exec_cmd: nio delete udp-15acfe5c-277e-4e07-a501-0493e6371314 
+Jun 17 14:51:33.237 HYPERVISOR: exec_cmd: nio create_udp udp-d5713d9a-3311-461d-8720-74739773fccb 10032 127.0.0.1 10033 
+Jun 17 14:51:33.237 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-d5713d9a-3311-461d-8720-74739773fccb 
+Jun 17 14:51:33.268 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-d5713d9a-3311-461d-8720-74739773fccb 1 
+Jun 17 14:51:37.057 HYPERVISOR: exec_cmd: ethsw remove_nio SCIENTIFIC_SW udp-d5713d9a-3311-461d-8720-74739773fccb 
+Jun 17 14:51:37.074 HYPERVISOR: exec_cmd: nio delete udp-d5713d9a-3311-461d-8720-74739773fccb 
+Jun 17 14:51:41.263 HYPERVISOR: exec_cmd: nio create_udp udp-5925ed30-6107-4f5b-a25f-b0b468675a47 10032 127.0.0.1 10033 
+Jun 17 14:51:41.263 HYPERVISOR: exec_cmd: ethsw add_nio SCIENTIFIC_SW udp-5925ed30-6107-4f5b-a25f-b0b468675a47 
+Jun 17 14:51:41.294 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-5925ed30-6107-4f5b-a25f-b0b468675a47 1 
+Jun 17 15:02:56.880 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-be818b95-b00b-4df9-89d0-b5598cb0a2ad 1 
+Jun 17 15:02:56.880 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-8ed63937-0dde-4eda-8db9-26ef6546be23 1 
+Jun 17 15:02:56.880 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-a48eaeb4-cc12-42e3-a864-31f00ae1c1f6 1 
+Jun 17 15:02:56.880 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-a281c00e-cb59-4486-bcf6-c26c93546c5b 1 
+Jun 17 15:02:56.880 HYPERVISOR: exec_cmd: ethsw set_access_port SCIENTIFIC_SW udp-5925ed30-6107-4f5b-a25f-b0b468675a47 1 

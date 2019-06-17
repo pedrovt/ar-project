@@ -1,0 +1,35 @@
+Jun 17 14:00:35.947 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 14:00:35.947 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 13297.
+Jun 17 14:00:36.448 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 14:00:36.448 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 14:00:36.448 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 14:00:36.448 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\eec6aa58-9696-449b-a34a-dd11285e41da 
+Jun 17 14:00:36.448 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\eec6aa58-9696-449b-a34a-dd11285e41da
+Jun 17 14:00:36.448 HYPERVISOR: exec_cmd: vm create BOSTON_ISP2 4 c7200 
+Jun 17 14:00:36.448 VM: VM BOSTON_ISP2 created.
+Jun 17 14:00:36.448 HYPERVISOR: exec_cmd: vm set_con_tcp_port BOSTON_ISP2 5003 
+Jun 17 14:00:36.448 HYPERVISOR: exec_cmd: c7200 get_mac_addr BOSTON_ISP2 
+Jun 17 14:00:36.448 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP2 
+Jun 17 14:00:36.448 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP2 0 0 C7200-IO-FE 
+Jun 17 14:00:36.456 HYPERVISOR: exec_cmd: vm set_disk0 BOSTON_ISP2 0 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm set_exec_area BOSTON_ISP2 64 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP2 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm set_idle_pc BOSTON_ISP2 0x601712a8 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm set_ios BOSTON_ISP2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: c7200 set_mac_addr BOSTON_ISP2 ca04.67a3.0000 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm set_nvram BOSTON_ISP2 512 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm set_ram BOSTON_ISP2 512 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP2 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm slot_remove_binding BOSTON_ISP2 0 0 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP2 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP2 0 0 C7200-IO-2FE 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP2 
+Jun 17 14:00:36.457 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP2 1 0 PA-2FE-TX 
+Jun 17 14:00:44.345 HYPERVISOR: exec_cmd: nio create_udp udp-49becd39-6a01-407c-8b2a-db93051ae119 10006 127.0.0.1 10007 
+Jun 17 14:00:44.902 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BOSTON_ISP2 1 0 udp-49becd39-6a01-407c-8b2a-db93051ae119 
+Jun 17 14:00:44.902 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP2 
+Jun 17 14:00:53.878 HYPERVISOR: exec_cmd: nio create_udp udp-d1317fc2-46c3-499e-8b6b-4236fe86c737 10168 127.0.0.1 10169 
+Jun 17 14:00:53.878 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BOSTON_ISP2 0 0 udp-d1317fc2-46c3-499e-8b6b-4236fe86c737 
+Jun 17 14:00:53.878 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP2 
+Jun 17 16:19:58.936 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP2 
+Jun 17 16:19:58.936 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP2 

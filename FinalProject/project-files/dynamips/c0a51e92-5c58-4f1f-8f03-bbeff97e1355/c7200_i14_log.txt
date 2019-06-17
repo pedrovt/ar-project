@@ -1,0 +1,1 @@
+Jun 17 14:34:36.939 VM: renamed from 'R1' to 'ANTENNA_AVEIRO'

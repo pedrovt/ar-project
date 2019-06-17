@@ -1,0 +1,26 @@
+uBridge version 0.9.13 running with WinPcap version 4.1.3 (packet.dll version 4.1.0.2980), based on libpcap version 1.0 branch 1_0_rel0b (20091008)
+Hypervisor TCP control server started (IP 127.0.0.1 port 14823).
+UDP tunnel connecting from local port 10035 to IPv4 addresss 127.0.0.1 on port 10034
+UDP tunnel connecting from local port 10033 to IPv4 addresss 127.0.0.1 on port 10032
+Source NIO listener thread for DYNAMIPS-10034-10035 has started
+Destination NIO listener thread for DYNAMIPS-10034-10035 has started
+UDP tunnel connecting from local port 10043 to IPv4 addresss 127.0.0.1 on port 10042
+UDP tunnel connecting from local port 10041 to IPv4 addresss 127.0.0.1 on port 10040
+Source NIO listener thread for DYNAMIPS-10042-10043 has started
+Destination NIO listener thread for DYNAMIPS-10042-10043 has started
+UDP tunnel connecting from local port 10043 to IPv4 addresss 127.0.0.1 on port 10042
+UDP tunnel connecting from local port 10041 to IPv4 addresss 127.0.0.1 on port 10040
+Source NIO listener thread for DYNAMIPS-10042-10043 has started
+Destination NIO listener thread for DYNAMIPS-10042-10043 has started
+UDP tunnel connecting from local port 10043 to IPv4 addresss 127.0.0.1 on port 10042
+UDP tunnel connecting from local port 10041 to IPv4 addresss 127.0.0.1 on port 10040
+Source NIO listener thread for DYNAMIPS-10042-10043 has started
+Destination NIO listener thread for DYNAMIPS-10042-10043 has started
+UDP tunnel connecting from local port 10135 to IPv4 addresss 127.0.0.1 on port 10134
+UDP tunnel connecting from local port 10132 to IPv4 addresss 127.0.0.1 on port 10133
+Source NIO listener thread for DYNAMIPS-10134-10135 has started
+Destination NIO listener thread for DYNAMIPS-10134-10135 has started
+UDP tunnel connecting from local port 10141 to IPv4 addresss 127.0.0.1 on port 10140
+UDP tunnel connecting from local port 10138 to IPv4 addresss 127.0.0.1 on port 10139
+Source NIO listener thread for DYNAMIPS-10140-10141 has started
+Destination NIO listener thread for DYNAMIPS-10140-10141 has started

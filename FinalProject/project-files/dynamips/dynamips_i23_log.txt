@@ -1,0 +1,47 @@
+Jun 17 14:41:13.443 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 14:41:13.443 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14610.
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 14:41:13.954 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\7abf1e3a-c93e-43c3-ac57-14d846f8d36b 
+Jun 17 14:41:13.954 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\7abf1e3a-c93e-43c3-ac57-14d846f8d36b
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm create ESW2 5 c3725 
+Jun 17 14:41:13.954 VM: VM ESW2 created.
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5010 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW2 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x60a6a1e0 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm set_ram ESW2 256 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 17 14:41:13.954 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Jun 17 14:41:14.031 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 14:41:21.652 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 14:45:32.603 HYPERVISOR: exec_cmd: nio create_udp udp-b8462be0-10d6-4efd-a2ae-2bb405ec1a4b 10030 127.0.0.1 10031 
+Jun 17 14:45:33.157 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 0 udp-b8462be0-10d6-4efd-a2ae-2bb405ec1a4b 
+Jun 17 14:45:33.157 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 17 14:50:43.819 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 17 14:50:43.819 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW2 1 0 
+Jun 17 14:50:43.819 HYPERVISOR: exec_cmd: nio delete udp-b8462be0-10d6-4efd-a2ae-2bb405ec1a4b 
+Jun 17 14:50:55.551 HYPERVISOR: exec_cmd: nio create_udp udp-00cd2a1a-cfdc-42c2-8ab1-a0458ed4cd4d 10030 127.0.0.1 10031 
+Jun 17 14:50:55.561 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 15 udp-00cd2a1a-cfdc-42c2-8ab1-a0458ed4cd4d 
+Jun 17 14:50:55.561 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 17 15:02:03.737 HYPERVISOR: exec_cmd: nio create_udp udp-b0467574-fa8d-4b72-b38b-c55271de94d4 10122 127.0.0.1 10123 
+Jun 17 15:02:03.753 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 0 udp-b0467574-fa8d-4b72-b38b-c55271de94d4 
+Jun 17 15:02:03.753 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 17 15:02:11.389 HYPERVISOR: exec_cmd: nio create_udp udp-2d5dc904-4f88-4e68-bf7c-ad8f3d8f42b1 10128 127.0.0.1 10129 
+Jun 17 15:02:11.404 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 1 udp-2d5dc904-4f88-4e68-bf7c-ad8f3d8f42b1 
+Jun 17 15:02:11.404 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 17 15:20:39.672 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 15:20:39.672 HYPERVISOR: exec_cmd: vm rename ESW2 DMZ_SWL2 
+Jun 17 15:20:39.765 HYPERVISOR: exec_cmd: vm set_ios DMZ_SWL2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 15:20:39.859 HYPERVISOR: exec_cmd: vm set_ios DMZ_SWL2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 16:19:58.992 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL2 
+Jun 17 16:19:58.992 HYPERVISOR: exec_cmd: vm extract_config DMZ_SWL2 
+Jun 17 16:20:23.042 HYPERVISOR: exec_cmd: vm set_ios DMZ_SWL2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 16:20:23.042 HYPERVISOR: exec_cmd: vm rename DMZ_SWL2 DMZ_SWL3_2 
+Jun 17 16:20:23.123 HYPERVISOR: exec_cmd: vm set_ios DMZ_SWL3_2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 17 16:20:23.201 HYPERVISOR: exec_cmd: vm set_ios DMZ_SWL3_2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 

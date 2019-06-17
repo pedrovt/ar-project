@@ -1,0 +1,26 @@
+Jun 17 14:00:36.487 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 14:00:36.487 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 13300.
+Jun 17 14:00:37.008 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 14:00:37.008 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 14:00:37.008 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 14:00:37.008 HYPERVISOR: exec_cmd: ethsw create LISBON_SW 
+Jun 17 14:00:45.078 HYPERVISOR: exec_cmd: nio create_udp udp-85be1fb6-8137-43d3-9186-c2dd5ad9a0e9 10010 127.0.0.1 10011 
+Jun 17 14:00:45.080 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-85be1fb6-8137-43d3-9186-c2dd5ad9a0e9 
+Jun 17 14:00:45.090 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-85be1fb6-8137-43d3-9186-c2dd5ad9a0e9 1 
+Jun 17 14:00:45.162 HYPERVISOR: exec_cmd: nio create_udp udp-9ac33e55-78e4-4a32-ab3e-d37b1a991ebf 10012 127.0.0.1 10013 
+Jun 17 14:00:45.163 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-9ac33e55-78e4-4a32-ab3e-d37b1a991ebf 
+Jun 17 14:00:45.173 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-9ac33e55-78e4-4a32-ab3e-d37b1a991ebf 1 
+Jun 17 14:35:20.051 HYPERVISOR: exec_cmd: nio create_udp udp-af978fa9-5592-46ac-9e53-6f07796ff9a8 10176 127.0.0.1 10177 
+Jun 17 14:35:20.051 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-af978fa9-5592-46ac-9e53-6f07796ff9a8 
+Jun 17 14:35:20.082 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-af978fa9-5592-46ac-9e53-6f07796ff9a8 1 
+Jun 17 14:43:32.064 HYPERVISOR: exec_cmd: nio create_udp udp-d0b6d7d8-d890-40fa-8bdc-aba9a72df1bc 10021 127.0.0.1 10020 
+Jun 17 14:43:32.064 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-d0b6d7d8-d890-40fa-8bdc-aba9a72df1bc 
+Jun 17 14:43:32.080 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-d0b6d7d8-d890-40fa-8bdc-aba9a72df1bc 1 
+Jun 17 14:54:05.184 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-9ac33e55-78e4-4a32-ab3e-d37b1a991ebf 1 
+Jun 17 14:54:05.184 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-af978fa9-5592-46ac-9e53-6f07796ff9a8 1 
+Jun 17 14:54:05.184 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-d0b6d7d8-d890-40fa-8bdc-aba9a72df1bc 1 
+Jun 17 14:54:05.184 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-85be1fb6-8137-43d3-9186-c2dd5ad9a0e9 1 
+Jun 17 14:54:22.449 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-9ac33e55-78e4-4a32-ab3e-d37b1a991ebf 1 
+Jun 17 14:54:22.449 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-af978fa9-5592-46ac-9e53-6f07796ff9a8 1 
+Jun 17 14:54:22.449 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-d0b6d7d8-d890-40fa-8bdc-aba9a72df1bc 1 
+Jun 17 14:54:22.449 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-85be1fb6-8137-43d3-9186-c2dd5ad9a0e9 1 

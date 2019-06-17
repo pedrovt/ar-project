@@ -1,0 +1,52 @@
+Jun 17 14:00:42.617 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 17 14:00:42.617 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 13351.
+Jun 17 14:00:43.120 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 14:00:43.120 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 17 14:00:43.120 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\cb0e839e-68cc-4ee3-9c05-5770b1989f73 
+Jun 17 14:00:43.121 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\cb0e839e-68cc-4ee3-9c05-5770b1989f73
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm create DMZ_R2 13 c7200 
+Jun 17 14:00:43.121 VM: VM DMZ_R2 created.
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm set_con_tcp_port DMZ_R2 5032 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: c7200 get_mac_addr DMZ_R2 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm slot_add_binding DMZ_R2 0 0 C7200-IO-FE 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm set_disk0 DMZ_R2 0 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm set_exec_area DMZ_R2 64 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm set_idle_pc DMZ_R2 0x601712a8 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm set_ios DMZ_R2 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: c7200 set_mac_addr DMZ_R2 ca0d.69f3.0000 
+Jun 17 14:00:43.121 HYPERVISOR: exec_cmd: vm set_nvram DMZ_R2 512 
+Jun 17 14:00:43.127 HYPERVISOR: exec_cmd: vm set_ram DMZ_R2 512 
+Jun 17 14:00:43.127 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:00:43.127 HYPERVISOR: exec_cmd: vm slot_remove_binding DMZ_R2 0 0 
+Jun 17 14:00:43.127 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:00:43.127 HYPERVISOR: exec_cmd: vm slot_add_binding DMZ_R2 0 0 C7200-IO-2FE 
+Jun 17 14:00:43.127 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:00:43.127 HYPERVISOR: exec_cmd: vm slot_add_binding DMZ_R2 1 0 PA-2FE-TX 
+Jun 17 14:00:52.067 HYPERVISOR: exec_cmd: nio create_udp udp-a83f9661-ad3f-46e3-9ea0-6bbdb98ee09f 10124 127.0.0.1 10125 
+Jun 17 14:00:52.628 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_R2 0 0 udp-a83f9661-ad3f-46e3-9ea0-6bbdb98ee09f 
+Jun 17 14:00:52.628 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:00:52.767 HYPERVISOR: exec_cmd: nio create_udp udp-03aacee6-fbc7-4e37-9bb6-c70f5fbadf6c 10136 127.0.0.1 10137 
+Jun 17 14:00:52.767 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_R2 0 1 udp-03aacee6-fbc7-4e37-9bb6-c70f5fbadf6c 
+Jun 17 14:00:52.767 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:00:52.967 HYPERVISOR: exec_cmd: nio create_udp udp-c56e3b12-236d-46d5-ab38-f9019a6fd9d7 10146 127.0.0.1 10147 
+Jun 17 14:00:52.967 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_R2 1 0 udp-c56e3b12-236d-46d5-ab38-f9019a6fd9d7 
+Jun 17 14:00:52.967 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:40:47.914 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:40:47.914 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding DMZ_R2 0 0 
+Jun 17 14:40:47.914 HYPERVISOR: exec_cmd: nio delete udp-a83f9661-ad3f-46e3-9ea0-6bbdb98ee09f 
+Jun 17 14:40:47.976 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:40:47.976 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding DMZ_R2 0 1 
+Jun 17 14:40:47.976 HYPERVISOR: exec_cmd: nio delete udp-03aacee6-fbc7-4e37-9bb6-c70f5fbadf6c 
+Jun 17 14:40:48.075 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:40:48.075 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding DMZ_R2 1 0 
+Jun 17 14:40:48.077 HYPERVISOR: exec_cmd: nio delete udp-c56e3b12-236d-46d5-ab38-f9019a6fd9d7 
+Jun 17 14:40:48.439 HYPERVISOR: exec_cmd: vm get_status DMZ_R2 
+Jun 17 14:40:48.439 HYPERVISOR: exec_cmd: vm extract_config DMZ_R2 
+Jun 17 14:40:48.439 HYPERVISOR: exec_cmd: vm delete DMZ_R2 
+Jun 17 14:40:48.439 VM: VM DMZ_R2 destroyed.
+Jun 17 14:40:48.439 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 17 14:40:48.892 HYPERVISOR: Stopped.
+Jun 17 14:40:48.892 GENERAL: reset done.
