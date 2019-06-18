@@ -1,10 +1,24 @@
 conf t
 
 int f0/0
+ip address 200.1.1.1 255.255.254.0
 no shut
 
 int f1/0
 no shut
+
+end
+write
+
+conf t
+
+# Aveiro
+ip route 200.1.0.0 255.255.255.128 200.1.0.1
+ip route 200.1.0.0 255.255.255.128 200.1.0.2
+
+# Boston
+ip route 200.1.0.128 255.255.255.128 200.1.0.129
+ip route 200.1.0.128 255.255.255.128 200.1.0.130
 
 end
 write

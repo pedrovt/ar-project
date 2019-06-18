@@ -18,22 +18,22 @@ ip address 10.107.0.1 255.255.128.0
 
 int vlan 224
 no shut
-ip address 10.112.0.13 255.247.0.0
+ip address 10.112.0.13 255.248.0.0
 
 int f1/15
 no shut
 switchport mode trunk
-switchport trunk allowed vlan 1,128,182,214
+switchport trunk allowed vlan 1-2,128,182,214,1002-1005
 
 int f1/0
 no shut
 switchport mode trunk
-switchport trunk allowed vlan 1,128,224
+switchport trunk allowed vlan 1-2,128,224,1002-1005
 
 int f1/1
 no shut
 switchport mode trunk
-switchport trunk allowed vlan 1,128,224
+switchport trunk allowed vlan 1-2,128,224,1002-1005
 
 end
 write
