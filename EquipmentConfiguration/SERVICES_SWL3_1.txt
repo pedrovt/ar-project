@@ -44,15 +44,15 @@ conf t
 
 int vlan 182
 ipv6 enable
-ipv6 address 2100:1:1:91::1/57
+ipv6 address 2100:1:1:91::1/71
 
 int vlan 214
 ipv6 enable
-ipv6 address 2100:1:1:107::1/57
+ipv6 address 2100:1:1:107::1/71
 
 int vlan 224
 ipv6 enable
-ipv6 address 2100:1:1:112::13/53
+ipv6 address 2100:1:1:112::13/75
 
 end
 write
