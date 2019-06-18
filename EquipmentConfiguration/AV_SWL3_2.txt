@@ -15,7 +15,7 @@ ipv6 address 2100:1:1:4000::2/55
 
 int vlan 224
 no shut
-ip address 10.112.0.9 255.248.0.0
+ip address 10.112.0.10 255.248.0.0
 ipv6 enable
 ipv6 address 2100:1:1:7000::10/53
 

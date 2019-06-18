@@ -16,7 +16,7 @@ int f0/0
 no shut
 ip address 200.1.0.1 255.255.254.0
 ipv6 enable
-ipv6 address 2100:1:1:3000::1
+ipv6 address 2100:1:1:3000::1/53
 
 end
 write
