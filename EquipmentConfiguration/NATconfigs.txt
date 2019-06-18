@@ -1,0 +1,62 @@
+# ===== POOLS DE ENDEREÇOS A UTILIZAR =====
+
+# AVEIRO (GERAL):
+#     200.1.1.129	200.1.1.254	255.255.254.0
+#     10.64.0.0				0.63.255.255
+
+conf t
+ip nat pool AV_GR 200.1.1.129 200.1.1.254 netmask 255.255.254.0
+access-list 2 permit 10.64.0.0 0.63.255.255
+ip nat inside source list 2 pool AV_GR
+int INTERFACE_INSIDE
+ip nat inside
+int INTERFACE_OUTSIDE
+ip nat outside
+
+
+
+# AVEIRO (DATACENTER):
+#     200.1.0.65	200.1.0.127	255.255.254.0
+#     10.120.0.0			0.7.255.255
+
+conf t
+ip nat pool AV_DC 200.1.0.65 200.1.0.127 netmask 255.255.254.0
+access-list 3 permit 10.120.0.0 0.7.255.255
+ip nat inside source list 3 pool AV_DC
+int INTERFACE_INSIDE
+ip nat inside
+int INTERFACE_OUTSIDE
+ip nat outside
+
+
+
+# BOSTON:
+#     200.1.0.129	200.1.0.254	255.255.254.0
+#     10.128.0.0			0.63.255.255
+
+conf t
+ip nat pool BO_GR 200.1.0.129 200.1.0.254 netmask 255.255.254.0
+access-list 4 permit 10.128.0.0 0.63.255.255
+ip nat inside source list 4 pool BO_GR
+int INTERFACE_INSIDE
+ip nat inside
+int INTERFACE_OUTSIDE
+ip nat outside
+
+
+
+# LISBOA:
+#     200.1.1.0		200.1.1.127	255.255.254.0
+#     10.192.0.0			0.63.255.255
+
+conf t
+ip nat pool LI_GR 200.1.1.0 200.1.1.127 netmask 255.255.254.0
+access-list 5 permit 10.192.0.0 0.63.255.255
+ip nat inside source list 5 pool LI_GR
+int INTERFACE_INSIDE
+ip nat inside
+int INTERFACE_OUTSIDE
+ip nat outside
+
+
+
