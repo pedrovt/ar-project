@@ -1,0 +1,32 @@
+Jun 18 14:19:26.574 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:26.574 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53299.
+Jun 18 14:19:26.585 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:26.586 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:26.586 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:26.586 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/098f7117-4e70-4166-a630-75e698edd6f2 
+Jun 18 14:19:26.586 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/098f7117-4e70-4166-a630-75e698edd6f2
+Jun 18 14:19:26.587 HYPERVISOR: exec_cmd: vm create SCIENTIFIC_SWL3_1 6 c3725 
+Jun 18 14:19:26.587 VM: VM SCIENTIFIC_SWL3_1 created.
+Jun 18 14:19:26.587 HYPERVISOR: exec_cmd: vm set_con_tcp_port SCIENTIFIC_SWL3_1 5028 
+Jun 18 14:19:26.588 HYPERVISOR: exec_cmd: c3725 get_mac_addr SCIENTIFIC_SWL3_1 
+Jun 18 14:19:26.588 HYPERVISOR: exec_cmd: vm set_disk0 SCIENTIFIC_SWL3_1 1 
+Jun 18 14:19:26.589 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 18 14:19:26.589 HYPERVISOR: exec_cmd: vm set_idle_pc SCIENTIFIC_SWL3_1 0x60a6a1e0 
+Jun 18 14:19:26.590 HYPERVISOR: exec_cmd: vm set_ios SCIENTIFIC_SWL3_1 /home/karkanius/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 18 14:19:26.590 HYPERVISOR: exec_cmd: c3725 set_mac_addr SCIENTIFIC_SWL3_1 c206.4834.0000 
+Jun 18 14:19:26.591 HYPERVISOR: exec_cmd: vm set_nvram SCIENTIFIC_SWL3_1 256 
+Jun 18 14:19:26.591 HYPERVISOR: exec_cmd: vm set_ram SCIENTIFIC_SWL3_1 256 
+Jun 18 14:19:26.592 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 18 14:19:26.592 HYPERVISOR: exec_cmd: vm slot_add_binding SCIENTIFIC_SWL3_1 1 0 NM-16ESW 
+Jun 18 14:19:31.387 HYPERVISOR: exec_cmd: nio create_udp udp-cfdc075a-ce79-4cbd-9640-d2c09f2bcd04 10082 127.0.0.1 10083 
+Jun 18 14:19:31.599 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_SWL3_1 1 0 udp-cfdc075a-ce79-4cbd-9640-d2c09f2bcd04 
+Jun 18 14:19:31.599 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 18 14:19:31.939 HYPERVISOR: exec_cmd: nio create_udp udp-3f863a3f-a46e-45d3-b0f8-6d203ca96ad1 10088 127.0.0.1 10089 
+Jun 18 14:19:31.940 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_SWL3_1 1 1 udp-3f863a3f-a46e-45d3-b0f8-6d203ca96ad1 
+Jun 18 14:19:31.940 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 18 14:19:34.075 HYPERVISOR: exec_cmd: nio create_udp udp-dae42489-7972-4a4c-923e-1af1150d3b82 10178 127.0.0.1 10179 
+Jun 18 14:19:34.076 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SCIENTIFIC_SWL3_1 1 15 udp-dae42489-7972-4a4c-923e-1af1150d3b82 
+Jun 18 14:19:34.076 HYPERVISOR: exec_cmd: vm get_status SCIENTIFIC_SWL3_1 
+Jun 18 15:29:46.162 HYPERVISOR: Stopped.
+Jun 18 15:29:46.162 VM: VM SCIENTIFIC_SWL3_1 destroyed.
+Jun 18 15:29:46.162 GENERAL: reset done.

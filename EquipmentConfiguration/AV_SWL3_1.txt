@@ -4,6 +4,7 @@ vlan 128
 vlan 224
 exit
 
+# IPv4 and VLAN Configurations
 conf t
 
 int vlan 128
@@ -29,4 +30,43 @@ switchport trunk allowed vlan 1-2,128,224,1002-1005
 
 end
 write
+
+# IPv6 Configurations
+conf t
+
+int vlan 128
+ipv6 enable
+ipv6 address 2100:1:1:64::1/55
+
+int vlan 224
+ipv6 enable
+ipv6 address 2100:1:1:112::9/53
+
+end
+write
+
+# OSPF Configurations
+conf t
+
+ip routing
+ipv6 unicast-routing 
+
+router ospf 1
+router-id 100.0.0.1 
+network 10.0.0.0 0.255.255.255 area 0
+passive-interface vlan 224
+
+ipv6 router ospf 1
+router-id 100.0.0.1
+
+int vlan 128
+ipv6 ospf 1 area 0
+
+int vlan 224
+ipv6 ospf 1 area 0
+
+end
+write
+
+
 

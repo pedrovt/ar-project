@@ -1,0 +1,47 @@
+Jun 18 14:19:26.732 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:26.732 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42997.
+Jun 18 14:19:26.742 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:26.742 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:26.742 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:26.742 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/ae1b2fcd-bde3-4240-b8a9-8ad41da71774 
+Jun 18 14:19:26.742 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/ae1b2fcd-bde3-4240-b8a9-8ad41da71774
+Jun 18 14:19:26.742 HYPERVISOR: exec_cmd: vm create AV_SWL3_2 9 c3725 
+Jun 18 14:19:26.742 VM: VM AV_SWL3_2 created.
+Jun 18 14:19:26.744 HYPERVISOR: exec_cmd: vm set_con_tcp_port AV_SWL3_2 5035 
+Jun 18 14:19:26.744 HYPERVISOR: exec_cmd: c3725 get_mac_addr AV_SWL3_2 
+Jun 18 14:19:26.745 HYPERVISOR: exec_cmd: vm set_disk0 AV_SWL3_2 1 
+Jun 18 14:19:26.745 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:26.746 HYPERVISOR: exec_cmd: vm set_idle_pc AV_SWL3_2 0x60a6a1e0 
+Jun 18 14:19:26.746 HYPERVISOR: exec_cmd: vm set_ios AV_SWL3_2 /home/karkanius/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 18 14:19:26.747 HYPERVISOR: exec_cmd: c3725 set_mac_addr AV_SWL3_2 c209.4bec.0000 
+Jun 18 14:19:26.747 HYPERVISOR: exec_cmd: vm set_nvram AV_SWL3_2 256 
+Jun 18 14:19:26.747 HYPERVISOR: exec_cmd: vm set_ram AV_SWL3_2 256 
+Jun 18 14:19:26.747 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:26.747 HYPERVISOR: exec_cmd: vm slot_add_binding AV_SWL3_2 1 0 NM-16ESW 
+Jun 18 14:19:31.949 HYPERVISOR: exec_cmd: nio create_udp udp-ed11e186-2f46-4b6e-bcfe-3370e229b285 10090 127.0.0.1 10091 
+Jun 18 14:19:32.165 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_2 1 0 udp-ed11e186-2f46-4b6e-bcfe-3370e229b285 
+Jun 18 14:19:32.166 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:32.341 HYPERVISOR: exec_cmd: nio create_udp udp-b09f9b89-0183-4864-8ea8-3b4267c0940f 10102 127.0.0.1 10103 
+Jun 18 14:19:32.342 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_2 1 1 udp-b09f9b89-0183-4864-8ea8-3b4267c0940f 
+Jun 18 14:19:32.342 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:32.556 HYPERVISOR: exec_cmd: nio create_udp udp-54f55e39-65a0-4d4d-b393-a7c666790193 10118 127.0.0.1 10119 
+Jun 18 14:19:32.557 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_2 0 0 udp-54f55e39-65a0-4d4d-b393-a7c666790193 
+Jun 18 14:19:32.557 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:32.630 HYPERVISOR: exec_cmd: nio create_udp udp-87017b0f-e00e-4249-b8ed-f7333d3df652 10124 127.0.0.1 10125 
+Jun 18 14:19:32.631 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_2 0 1 udp-87017b0f-e00e-4249-b8ed-f7333d3df652 
+Jun 18 14:19:32.631 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:33.031 HYPERVISOR: exec_cmd: nio create_udp udp-615ad107-242b-4ea8-ae8a-1d4a760d6d82 10138 127.0.0.1 10139 
+Jun 18 14:19:33.032 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_2 1 4 udp-615ad107-242b-4ea8-ae8a-1d4a760d6d82 
+Jun 18 14:19:33.032 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:33.181 HYPERVISOR: exec_cmd: nio create_udp udp-fd6d1cd0-a421-47ba-9f01-c5f5bed9e045 10150 127.0.0.1 10151 
+Jun 18 14:19:33.182 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_2 1 5 udp-fd6d1cd0-a421-47ba-9f01-c5f5bed9e045 
+Jun 18 14:19:33.182 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:33.579 HYPERVISOR: exec_cmd: nio create_udp udp-d15a6f96-1052-419d-b62c-bf21fd8ef1f0 10162 127.0.0.1 10163 
+Jun 18 14:19:33.580 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_2 1 2 udp-d15a6f96-1052-419d-b62c-bf21fd8ef1f0 
+Jun 18 14:19:33.580 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 14:19:33.976 HYPERVISOR: exec_cmd: nio create_udp udp-1670829f-27c5-4b0f-bbba-25a20b1e2d5b 10174 127.0.0.1 10175 
+Jun 18 14:19:33.977 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_2 1 3 udp-1670829f-27c5-4b0f-bbba-25a20b1e2d5b 
+Jun 18 14:19:33.977 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_2 
+Jun 18 15:29:46.160 HYPERVISOR: Stopped.
+Jun 18 15:29:46.160 VM: VM AV_SWL3_2 destroyed.
+Jun 18 15:29:46.160 GENERAL: reset done.

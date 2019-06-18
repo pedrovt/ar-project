@@ -1,0 +1,35 @@
+Jun 18 14:19:25.718 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:25.718 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53045.
+Jun 18 14:19:25.722 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:25.723 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:25.723 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:25.723 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/1636754f-10cc-4fe4-ae29-aab7243e1e64 
+Jun 18 14:19:25.723 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/1636754f-10cc-4fe4-ae29-aab7243e1e64
+Jun 18 14:19:25.723 HYPERVISOR: exec_cmd: vm create LISBON_ISP1 1 c7200 
+Jun 18 14:19:25.723 VM: VM LISBON_ISP1 created.
+Jun 18 14:19:25.724 HYPERVISOR: exec_cmd: vm set_con_tcp_port LISBON_ISP1 5000 
+Jun 18 14:19:25.724 HYPERVISOR: exec_cmd: c7200 get_mac_addr LISBON_ISP1 
+Jun 18 14:19:25.724 HYPERVISOR: exec_cmd: vm get_status LISBON_ISP1 
+Jun 18 14:19:25.724 HYPERVISOR: exec_cmd: vm slot_add_binding LISBON_ISP1 0 0 C7200-IO-FE 
+Jun 18 14:19:25.724 HYPERVISOR: exec_cmd: vm set_disk0 LISBON_ISP1 0 
+Jun 18 14:19:25.724 HYPERVISOR: exec_cmd: vm get_status LISBON_ISP1 
+Jun 18 14:19:25.725 HYPERVISOR: exec_cmd: vm set_idle_pc LISBON_ISP1 0x601712a8 
+Jun 18 14:19:25.725 HYPERVISOR: exec_cmd: vm set_ios LISBON_ISP1 /home/karkanius/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 18 14:19:25.725 HYPERVISOR: exec_cmd: c7200 set_mac_addr LISBON_ISP1 ca01.676f.0000 
+Jun 18 14:19:25.725 HYPERVISOR: exec_cmd: vm set_nvram LISBON_ISP1 512 
+Jun 18 14:19:25.725 HYPERVISOR: exec_cmd: vm set_ram LISBON_ISP1 512 
+Jun 18 14:19:25.726 HYPERVISOR: exec_cmd: vm get_status LISBON_ISP1 
+Jun 18 14:19:25.726 HYPERVISOR: exec_cmd: vm slot_remove_binding LISBON_ISP1 0 0 
+Jun 18 14:19:25.726 HYPERVISOR: exec_cmd: vm get_status LISBON_ISP1 
+Jun 18 14:19:25.726 HYPERVISOR: exec_cmd: vm slot_add_binding LISBON_ISP1 0 0 C7200-IO-2FE 
+Jun 18 14:19:25.726 HYPERVISOR: exec_cmd: vm get_status LISBON_ISP1 
+Jun 18 14:19:25.726 HYPERVISOR: exec_cmd: vm slot_add_binding LISBON_ISP1 1 0 PA-2FE-TX 
+Jun 18 14:19:27.727 HYPERVISOR: exec_cmd: nio create_udp udp-9cfabf07-52f1-4a49-a068-6409560f7610 10014 127.0.0.1 10015 
+Jun 18 14:19:27.941 HYPERVISOR: exec_cmd: vm slot_add_nio_binding LISBON_ISP1 1 0 udp-9cfabf07-52f1-4a49-a068-6409560f7610 
+Jun 18 14:19:27.942 HYPERVISOR: exec_cmd: vm get_status LISBON_ISP1 
+Jun 18 14:19:29.366 HYPERVISOR: exec_cmd: nio create_udp udp-71cdd3d6-c3c7-4f66-aa06-9a414f986f49 10040 127.0.0.1 10041 
+Jun 18 14:19:29.367 HYPERVISOR: exec_cmd: vm slot_add_nio_binding LISBON_ISP1 0 0 udp-71cdd3d6-c3c7-4f66-aa06-9a414f986f49 
+Jun 18 14:19:29.367 HYPERVISOR: exec_cmd: vm get_status LISBON_ISP1 
+Jun 18 15:29:46.159 HYPERVISOR: Stopped.
+Jun 18 15:29:46.159 VM: VM LISBON_ISP1 destroyed.
+Jun 18 15:29:46.160 GENERAL: reset done.

@@ -1,0 +1,17 @@
+Jun 18 14:19:25.816 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:25.816 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47733.
+Jun 18 14:19:25.826 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:25.827 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:25.827 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:25.827 HYPERVISOR: exec_cmd: ethsw create BOSTON_SW 
+Jun 18 14:19:27.102 HYPERVISOR: exec_cmd: nio create_udp udp-4229268f-3668-45a2-b495-18da0d2427a1 10001 127.0.0.1 10000 
+Jun 18 14:19:27.102 HYPERVISOR: exec_cmd: ethsw add_nio BOSTON_SW udp-4229268f-3668-45a2-b495-18da0d2427a1 
+Jun 18 14:19:27.122 HYPERVISOR: exec_cmd: ethsw set_access_port BOSTON_SW udp-4229268f-3668-45a2-b495-18da0d2427a1 1 
+Jun 18 14:19:27.468 HYPERVISOR: exec_cmd: nio create_udp udp-33f14270-279d-422a-98a1-682aa36b0480 10005 127.0.0.1 10004 
+Jun 18 14:19:27.469 HYPERVISOR: exec_cmd: ethsw add_nio BOSTON_SW udp-33f14270-279d-422a-98a1-682aa36b0480 
+Jun 18 14:19:27.484 HYPERVISOR: exec_cmd: ethsw set_access_port BOSTON_SW udp-33f14270-279d-422a-98a1-682aa36b0480 1 
+Jun 18 14:19:27.557 HYPERVISOR: exec_cmd: nio create_udp udp-c4c4b683-a4fe-4e42-8390-3799b0dc1e45 10008 127.0.0.1 10009 
+Jun 18 14:19:27.557 HYPERVISOR: exec_cmd: ethsw add_nio BOSTON_SW udp-c4c4b683-a4fe-4e42-8390-3799b0dc1e45 
+Jun 18 14:19:27.564 HYPERVISOR: exec_cmd: ethsw set_access_port BOSTON_SW udp-c4c4b683-a4fe-4e42-8390-3799b0dc1e45 1 
+Jun 18 15:29:46.161 HYPERVISOR: Stopped.
+Jun 18 15:29:46.213 GENERAL: reset done.

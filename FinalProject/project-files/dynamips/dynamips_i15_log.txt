@@ -1,0 +1,32 @@
+Jun 18 14:19:26.548 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:26.548 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54991.
+Jun 18 14:19:26.558 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:26.558 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:26.558 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:26.558 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/7abf1e3a-c93e-43c3-ac57-14d846f8d36b 
+Jun 18 14:19:26.558 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/7abf1e3a-c93e-43c3-ac57-14d846f8d36b
+Jun 18 14:19:26.558 HYPERVISOR: exec_cmd: vm create DMZ_SWL3_2 5 c3725 
+Jun 18 14:19:26.558 VM: VM DMZ_SWL3_2 created.
+Jun 18 14:19:26.559 HYPERVISOR: exec_cmd: vm set_con_tcp_port DMZ_SWL3_2 5026 
+Jun 18 14:19:26.559 HYPERVISOR: exec_cmd: c3725 get_mac_addr DMZ_SWL3_2 
+Jun 18 14:19:26.559 HYPERVISOR: exec_cmd: vm set_disk0 DMZ_SWL3_2 1 
+Jun 18 14:19:26.559 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 18 14:19:26.560 HYPERVISOR: exec_cmd: vm set_idle_pc DMZ_SWL3_2 0x60a6a1e0 
+Jun 18 14:19:26.560 HYPERVISOR: exec_cmd: vm set_ios DMZ_SWL3_2 /home/karkanius/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 18 14:19:26.560 HYPERVISOR: exec_cmd: c3725 set_mac_addr DMZ_SWL3_2 c205.194c.0000 
+Jun 18 14:19:26.560 HYPERVISOR: exec_cmd: vm set_nvram DMZ_SWL3_2 256 
+Jun 18 14:19:26.561 HYPERVISOR: exec_cmd: vm set_ram DMZ_SWL3_2 256 
+Jun 18 14:19:26.561 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 18 14:19:26.561 HYPERVISOR: exec_cmd: vm slot_add_binding DMZ_SWL3_2 1 0 NM-16ESW 
+Jun 18 14:19:30.765 HYPERVISOR: exec_cmd: nio create_udp udp-82341dbd-a0b8-44c7-b327-34ed75f79510 10074 127.0.0.1 10075 
+Jun 18 14:19:30.978 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_SWL3_2 1 15 udp-82341dbd-a0b8-44c7-b327-34ed75f79510 
+Jun 18 14:19:30.979 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 18 14:19:33.098 HYPERVISOR: exec_cmd: nio create_udp udp-ac574839-f640-47ea-9cdf-fc6b5de3524e 10142 127.0.0.1 10143 
+Jun 18 14:19:33.099 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_SWL3_2 1 0 udp-ac574839-f640-47ea-9cdf-fc6b5de3524e 
+Jun 18 14:19:33.100 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 18 14:19:33.173 HYPERVISOR: exec_cmd: nio create_udp udp-4cb8ab0d-12ed-4a01-b0d8-cef609f345d4 10148 127.0.0.1 10149 
+Jun 18 14:19:33.174 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_SWL3_2 1 1 udp-4cb8ab0d-12ed-4a01-b0d8-cef609f345d4 
+Jun 18 14:19:33.174 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 18 15:29:46.161 HYPERVISOR: Stopped.
+Jun 18 15:29:46.161 VM: VM DMZ_SWL3_2 destroyed.
+Jun 18 15:29:46.161 GENERAL: reset done.

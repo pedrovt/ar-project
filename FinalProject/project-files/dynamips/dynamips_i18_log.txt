@@ -1,0 +1,32 @@
+Jun 18 14:19:26.641 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:26.642 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38993.
+Jun 18 14:19:26.651 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:26.652 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:26.652 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:26.652 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/fefd9a62-aa83-4a09-b18b-129023a891cc 
+Jun 18 14:19:26.652 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/fefd9a62-aa83-4a09-b18b-129023a891cc
+Jun 18 14:19:26.652 HYPERVISOR: exec_cmd: vm create SERVICES_SWL3_1 12 c3725 
+Jun 18 14:19:26.652 VM: VM SERVICES_SWL3_1 created.
+Jun 18 14:19:26.652 HYPERVISOR: exec_cmd: vm set_con_tcp_port SERVICES_SWL3_1 5031 
+Jun 18 14:19:26.652 HYPERVISOR: exec_cmd: c3725 get_mac_addr SERVICES_SWL3_1 
+Jun 18 14:19:26.652 HYPERVISOR: exec_cmd: vm set_disk0 SERVICES_SWL3_1 1 
+Jun 18 14:19:26.653 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 18 14:19:26.653 HYPERVISOR: exec_cmd: vm set_idle_pc SERVICES_SWL3_1 0x60a6a1e0 
+Jun 18 14:19:26.653 HYPERVISOR: exec_cmd: vm set_ios SERVICES_SWL3_1 /home/karkanius/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 18 14:19:26.653 HYPERVISOR: exec_cmd: c3725 set_mac_addr SERVICES_SWL3_1 c20c.3ef0.0000 
+Jun 18 14:19:26.653 HYPERVISOR: exec_cmd: vm set_nvram SERVICES_SWL3_1 256 
+Jun 18 14:19:26.653 HYPERVISOR: exec_cmd: vm set_ram SERVICES_SWL3_1 256 
+Jun 18 14:19:26.654 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 18 14:19:26.654 HYPERVISOR: exec_cmd: vm slot_add_binding SERVICES_SWL3_1 1 0 NM-16ESW 
+Jun 18 14:19:33.252 HYPERVISOR: exec_cmd: nio create_udp udp-a806aa3a-d7a3-47b2-b6f1-06f653003905 10154 127.0.0.1 10155 
+Jun 18 14:19:33.465 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_SWL3_1 1 0 udp-a806aa3a-d7a3-47b2-b6f1-06f653003905 
+Jun 18 14:19:33.466 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 18 14:19:33.572 HYPERVISOR: exec_cmd: nio create_udp udp-c2c8ccfd-16ef-4b94-a078-38a408cdcbea 10160 127.0.0.1 10161 
+Jun 18 14:19:33.573 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_SWL3_1 1 1 udp-c2c8ccfd-16ef-4b94-a078-38a408cdcbea 
+Jun 18 14:19:33.573 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 18 14:19:34.255 HYPERVISOR: exec_cmd: nio create_udp udp-a4295128-a8fc-49d6-819a-2a261eaa7ca6 10186 127.0.0.1 10187 
+Jun 18 14:19:34.256 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_SWL3_1 1 15 udp-a4295128-a8fc-49d6-819a-2a261eaa7ca6 
+Jun 18 14:19:34.256 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 18 15:29:46.160 HYPERVISOR: Stopped.
+Jun 18 15:29:46.160 VM: VM SERVICES_SWL3_1 destroyed.
+Jun 18 15:29:46.160 GENERAL: reset done.

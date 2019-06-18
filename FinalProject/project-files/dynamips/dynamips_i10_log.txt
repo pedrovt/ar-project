@@ -1,0 +1,17 @@
+Jun 18 14:19:26.377 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:26.377 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42047.
+Jun 18 14:19:26.387 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:26.388 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:26.388 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:26.388 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-1 
+Jun 18 14:19:28.583 HYPERVISOR: exec_cmd: nio create_udp udp-22d3e86f-330d-4879-bff9-49114f0a82e6 10028 127.0.0.1 10029 
+Jun 18 14:19:28.583 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-22d3e86f-330d-4879-bff9-49114f0a82e6 
+Jun 18 14:19:28.587 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-22d3e86f-330d-4879-bff9-49114f0a82e6 240 
+Jun 18 14:19:30.742 HYPERVISOR: exec_cmd: nio create_udp udp-d774535a-1081-4fc1-8399-86433d19230a 10072 127.0.0.1 10073 
+Jun 18 14:19:30.742 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-d774535a-1081-4fc1-8399-86433d19230a 
+Jun 18 14:19:30.758 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Ethernetswitch-1 udp-d774535a-1081-4fc1-8399-86433d19230a 1 
+Jun 18 14:19:34.143 HYPERVISOR: exec_cmd: nio create_udp udp-ca7c44e3-69da-431c-a059-36f0cc57a31b 10180 127.0.0.1 10181 
+Jun 18 14:19:34.144 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-ca7c44e3-69da-431c-a059-36f0cc57a31b 
+Jun 18 14:19:34.157 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Ethernetswitch-1 udp-ca7c44e3-69da-431c-a059-36f0cc57a31b 1 
+Jun 18 15:29:46.161 HYPERVISOR: Stopped.
+Jun 18 15:29:46.213 GENERAL: reset done.

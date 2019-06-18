@@ -1,0 +1,39 @@
+Jun 18 14:19:26.446 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:26.446 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53697.
+Jun 18 14:19:26.456 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:26.457 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:26.457 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:26.457 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/c0a51e92-5c58-4f1f-8f03-bbeff97e1355 
+Jun 18 14:19:26.457 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips/c0a51e92-5c58-4f1f-8f03-bbeff97e1355
+Jun 18 14:19:26.457 HYPERVISOR: exec_cmd: vm create ANTENNA_AVEIRO 14 c7200 
+Jun 18 14:19:26.457 VM: VM ANTENNA_AVEIRO created.
+Jun 18 14:19:26.457 HYPERVISOR: exec_cmd: vm set_con_tcp_port ANTENNA_AVEIRO 5036 
+Jun 18 14:19:26.458 HYPERVISOR: exec_cmd: c7200 get_mac_addr ANTENNA_AVEIRO 
+Jun 18 14:19:26.458 HYPERVISOR: exec_cmd: vm get_status ANTENNA_AVEIRO 
+Jun 18 14:19:26.458 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENNA_AVEIRO 0 0 C7200-IO-FE 
+Jun 18 14:19:26.458 HYPERVISOR: exec_cmd: vm set_disk0 ANTENNA_AVEIRO 0 
+Jun 18 14:19:26.459 HYPERVISOR: exec_cmd: vm get_status ANTENNA_AVEIRO 
+Jun 18 14:19:26.459 HYPERVISOR: exec_cmd: vm set_idle_pc ANTENNA_AVEIRO 0x601712a8 
+Jun 18 14:19:26.459 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_AVEIRO /home/karkanius/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 18 14:19:26.459 HYPERVISOR: exec_cmd: c7200 set_mac_addr ANTENNA_AVEIRO ca0e.0bb4.0000 
+Jun 18 14:19:26.460 HYPERVISOR: exec_cmd: vm set_nvram ANTENNA_AVEIRO 512 
+Jun 18 14:19:26.460 HYPERVISOR: exec_cmd: vm set_ram ANTENNA_AVEIRO 512 
+Jun 18 14:19:26.460 HYPERVISOR: exec_cmd: vm get_status ANTENNA_AVEIRO 
+Jun 18 14:19:26.460 HYPERVISOR: exec_cmd: vm slot_remove_binding ANTENNA_AVEIRO 0 0 
+Jun 18 14:19:26.460 HYPERVISOR: exec_cmd: vm get_status ANTENNA_AVEIRO 
+Jun 18 14:19:26.460 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENNA_AVEIRO 0 0 C7200-IO-2FE 
+Jun 18 14:19:26.460 HYPERVISOR: exec_cmd: vm get_status ANTENNA_AVEIRO 
+Jun 18 14:19:26.461 HYPERVISOR: exec_cmd: vm slot_add_binding ANTENNA_AVEIRO 1 0 PA-2FE-TX 
+Jun 18 14:19:29.592 HYPERVISOR: exec_cmd: nio create_udp udp-eefb7dd4-593d-45ef-9944-28778777e530 10052 127.0.0.1 10053 
+Jun 18 14:19:29.806 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ANTENNA_AVEIRO 0 0 udp-eefb7dd4-593d-45ef-9944-28778777e530 
+Jun 18 14:19:29.807 HYPERVISOR: exec_cmd: vm get_status ANTENNA_AVEIRO 
+Jun 18 14:19:30.225 HYPERVISOR: exec_cmd: nio create_udp udp-89621ea4-adc0-42aa-be4a-5d54f70f5733 10062 127.0.0.1 10063 
+Jun 18 14:19:30.226 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ANTENNA_AVEIRO 0 1 udp-89621ea4-adc0-42aa-be4a-5d54f70f5733 
+Jun 18 14:19:30.226 HYPERVISOR: exec_cmd: vm get_status ANTENNA_AVEIRO 
+Jun 18 15:04:16.850 HYPERVISOR: exec_cmd: vm get_status ANTENNA_AVEIRO 
+Jun 18 15:04:16.850 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ANTENNA_AVEIRO 0 1 
+Jun 18 15:04:16.852 HYPERVISOR: exec_cmd: nio delete udp-89621ea4-adc0-42aa-be4a-5d54f70f5733 
+Jun 18 15:04:21.211 HYPERVISOR: exec_cmd: vm set_ios ANTENNA_AVEIRO /home/karkanius/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 18 15:29:46.160 HYPERVISOR: Stopped.
+Jun 18 15:29:46.160 VM: VM ANTENNA_AVEIRO destroyed.
+Jun 18 15:29:46.160 GENERAL: reset done.

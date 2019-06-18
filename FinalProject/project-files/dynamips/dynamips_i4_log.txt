@@ -1,0 +1,20 @@
+Jun 18 14:19:25.792 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Jun 18 14:19:25.792 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37859.
+Jun 18 14:19:25.802 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:19:25.802 HYPERVISOR: exec_cmd: hypervisor working_dir /home/karkanius/repos/ar-project/FinalProject/project-files/dynamips 
+Jun 18 14:19:25.802 GENERAL: working_dir=/home/karkanius/repos/ar-project/FinalProject/project-files/dynamips
+Jun 18 14:19:25.802 HYPERVISOR: exec_cmd: ethsw create LISBON_SW 
+Jun 18 14:19:27.635 HYPERVISOR: exec_cmd: nio create_udp udp-58b1ff7d-ab40-4522-a6e1-52b6fbd52a78 10010 127.0.0.1 10011 
+Jun 18 14:19:27.636 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-58b1ff7d-ab40-4522-a6e1-52b6fbd52a78 
+Jun 18 14:19:27.640 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-58b1ff7d-ab40-4522-a6e1-52b6fbd52a78 1 
+Jun 18 14:19:27.712 HYPERVISOR: exec_cmd: nio create_udp udp-78275f22-cd1f-4edd-87ed-7128e7a91a57 10012 127.0.0.1 10013 
+Jun 18 14:19:27.712 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-78275f22-cd1f-4edd-87ed-7128e7a91a57 
+Jun 18 14:19:27.720 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-78275f22-cd1f-4edd-87ed-7128e7a91a57 1 
+Jun 18 14:19:30.147 HYPERVISOR: exec_cmd: nio create_udp udp-396f3c84-0a59-4564-96cc-e75c49aaa237 10056 127.0.0.1 10057 
+Jun 18 14:19:30.148 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-396f3c84-0a59-4564-96cc-e75c49aaa237 
+Jun 18 14:19:30.153 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-396f3c84-0a59-4564-96cc-e75c49aaa237 1 
+Jun 18 14:19:30.655 HYPERVISOR: exec_cmd: nio create_udp udp-21243df7-6fc5-4abe-9717-b0cd4ab2e34c 10069 127.0.0.1 10068 
+Jun 18 14:19:30.656 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-21243df7-6fc5-4abe-9717-b0cd4ab2e34c 
+Jun 18 14:19:30.675 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-21243df7-6fc5-4abe-9717-b0cd4ab2e34c 1 
+Jun 18 15:29:46.161 HYPERVISOR: Stopped.
+Jun 18 15:29:46.233 GENERAL: reset done.
