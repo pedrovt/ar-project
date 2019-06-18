@@ -6,19 +6,26 @@ vlan 213
 vlan 224
 exit
 
+# IP and VLAN Configurations
 conf t
 
 int vlan 181
 no shut
 ip address 10.90.128.2 255.255.128.0
+ipv6 enable
+ipv6 address 2100:1:1:5A80::2/57
 
 int vlan 213
 no shut
 ip address 10.106.128.2 255.255.128.0
+ipv6 enable
+ipv6 address 2100:1:1:6A80::2/57
 
 int vlan 224
 no shut
 ip address 10.112.0.12 255.248.0.0
+ipv6 enable
+ipv6 address 2100:1:1:7000::12/53
 
 int f1/15
 no shut
@@ -37,4 +44,30 @@ switchport trunk allowed vlan 1-2,128,224,1002-1005
 
 end
 write
+
+# OSPF Configurations
+conf t
+
+ip routing
+ipv6 unicast-routing 
+
+router ospf 1
+router-id 10.1.0.0
+network 10.0.0.0 0.255.255.255 area 0
+
+ipv6 router ospf 1
+router-id 10.1.1.0
+
+int vlan 181
+ipv6 ospf 1 area 0
+
+int vlan 213
+ipv6 ospf 1 area 0
+
+int vlan 224
+ipv6 ospf 1 area 0
+
+end
+write
+
 
