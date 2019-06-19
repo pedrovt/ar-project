@@ -1,3 +1,5 @@
+C3725 'DMZ_SWL3_1': generic_nvram_extract_config: Unknown error -61605
+C3725 'DMZ_SWL3_1': generic_nvram_extract_config: Unknown error -61605
 Cisco Router Simulation Platform (version 0.2.17-x86/Windows stable)
 Copyright (c) 2005-2011 Christophe Fillot.
 Build date: Aug 28 2017 08:26:42
@@ -7,7 +9,7 @@ ILT: loaded table "mips64j" from cache.
 ILT: loaded table "mips64e" from cache.
 ILT: loaded table "ppc32j" from cache.
 ILT: loaded table "ppc32e" from cache.
-Hypervisor TCP control server started (IP 127.0.0.1 port 3495).
+Hypervisor TCP control server started (IP 127.0.0.1 port 29470).
 CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
 C3725 instance 'DMZ_SWL3_1' (id 2):
   VM Status  : 0
@@ -19,8 +21,10 @@ Loading ELF file 'C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21
 ELF entry point: 0x80008000
 
 C3725 'DMZ_SWL3_1': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+NIO udp-f703cc19-b658-4a85-89e8-ee0df00fde17: capturing to file 'C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\tmp\captures\DMZ_SWL3_1_FastEthernet10_to_AV_SWL3_1_FastEthernet14.pcap'
 
 C3725 'DMZ_SWL3_1': stopping simulation.
+NIO udp-f703cc19-b658-4a85-89e8-ee0df00fde17: ending packet capture.
 Hypervisor: closing control sockets.
 Hypervisor: closing remote client connections.
 Shutdown in progress...

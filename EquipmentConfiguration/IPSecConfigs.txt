@@ -1,0 +1,199 @@
+# SCIENTIFIC_SWL3_1
+conf t
+
+crypto isakmp policy 30 
+authentication pre-share 
+crypto isakmp key labcom address 10.112.0.15
+crypto ipsec transform-set authT ah-sha-hmac 
+crypto ipsec transform-set cipherT esp-des 
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des 
+crypto ipsec profile ARipsec 
+set transform-set auth_ciphT cipherT authT 
+
+interface Tunnel 11
+ip unnumbered vlan 224
+tunnel source 10.112.0.11
+tunnel destination 10.112.0.15
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+
+ip route 10.120.0.3 255.255.255.255 Tunnel 11
+
+end
+write
+
+
+# DMZ_SWL3_1
+conf t
+
+crypto isakmp policy 30 
+authentication pre-share 
+crypto isakmp key labcom address 10.112.0.11
+crypto ipsec transform-set authT ah-sha-hmac 
+crypto ipsec transform-set cipherT esp-des 
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des 
+crypto ipsec profile ARipsec 
+set transform-set auth_ciphT cipherT authT 
+
+interface Tunnel 11
+ip unnumbered vlan 224
+tunnel source 10.112.0.15
+tunnel destination 10.112.0.11
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+
+ip route 10.106.128.0 255.255.128.0 Tunnel 11
+
+end
+write
+
+###################################################################
+# SCIENTIFIC_SWL3_2
+conf t
+
+crypto isakmp policy 30 
+authentication pre-share 
+crypto isakmp key labcom address 10.112.0.16
+crypto ipsec transform-set authT ah-sha-hmac 
+crypto ipsec transform-set cipherT esp-des 
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des 
+crypto ipsec profile ARipsec 
+set transform-set auth_ciphT cipherT authT 
+
+interface Tunnel 22
+ip unnumbered vlan 224
+tunnel source 10.112.0.12
+tunnel destination 10.112.0.16
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+
+ip route 10.120.0.3 255.255.255.255 Tunnel 22
+
+end
+write
+
+
+# DMZ_SWL3_2
+conf t
+
+crypto isakmp policy 30 
+authentication pre-share 
+crypto isakmp key labcom address 10.112.0.12
+crypto ipsec transform-set authT ah-sha-hmac 
+crypto ipsec transform-set cipherT esp-des 
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des 
+crypto ipsec profile ARipsec 
+set transform-set auth_ciphT cipherT authT 
+
+interface Tunnel 22
+ip unnumbered vlan 224
+tunnel source 10.112.0.16
+tunnel destination 10.112.0.12
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+
+ip route 10.106.128.0 255.255.128.0 Tunnel 22
+
+end
+write
+
+###################################################################
+# SCIENTIFIC_SWL3_1
+conf t
+
+crypto isakmp policy 30 
+authentication pre-share 
+crypto isakmp key labcom address 10.112.0.16
+crypto ipsec transform-set authT ah-sha-hmac 
+crypto ipsec transform-set cipherT esp-des 
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des 
+crypto ipsec profile ARipsec 
+set transform-set auth_ciphT cipherT authT 
+
+interface Tunnel 12
+ip unnumbered vlan 224
+tunnel source 10.112.0.11
+tunnel destination 10.112.0.16
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+
+ip route 10.120.0.3 255.255.255.255 Tunnel 12
+
+end
+write
+
+
+# DMZ_SWL3_2
+conf t
+
+crypto isakmp policy 30 
+authentication pre-share 
+crypto isakmp key labcom address 10.112.0.11
+crypto ipsec transform-set authT ah-sha-hmac 
+crypto ipsec transform-set cipherT esp-des 
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des 
+crypto ipsec profile ARipsec 
+set transform-set auth_ciphT cipherT authT 
+
+interface Tunnel 12
+ip unnumbered vlan 224
+tunnel source 10.112.0.16
+tunnel destination 10.112.0.11
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+
+ip route 10.106.128.0 255.255.128.0 Tunnel 12
+
+end
+write
+
+###################################################################
+# SCIENTIFIC_SWL3_2
+conf t
+
+crypto isakmp policy 30 
+authentication pre-share 
+crypto isakmp key labcom address 10.112.0.15
+crypto ipsec transform-set authT ah-sha-hmac 
+crypto ipsec transform-set cipherT esp-des 
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des 
+crypto ipsec profile ARipsec 
+set transform-set auth_ciphT cipherT authT 
+
+interface Tunnel 21
+ip unnumbered vlan 224
+tunnel source 10.112.0.12
+tunnel destination 10.112.0.15
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+
+ip route 10.120.0.3 255.255.255.255 Tunnel 21
+
+end
+write
+
+
+# DMZ_SWL3_1
+conf t
+
+crypto isakmp policy 30 
+authentication pre-share 
+crypto isakmp key labcom address 10.112.0.12
+crypto ipsec transform-set authT ah-sha-hmac 
+crypto ipsec transform-set cipherT esp-des 
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des 
+crypto ipsec profile ARipsec 
+set transform-set auth_ciphT cipherT authT 
+
+interface Tunnel 21
+ip unnumbered vlan 224
+tunnel source 10.112.0.15
+tunnel destination 10.112.0.12
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+
+ip route 10.106.128.0 255.255.128.0 Tunnel 21
+
+end
+write
+
