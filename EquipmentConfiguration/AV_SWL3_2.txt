@@ -36,6 +36,11 @@ no shut
 switchport mode trunk
 switchport trunk allowed vlan 1-2,128,224,1002-1005
 
+int f1/10
+no shut
+switchport mode trunk
+switchport trunk allowed vlan 1-2,128,224,1002-1005
+
 end
 write
 

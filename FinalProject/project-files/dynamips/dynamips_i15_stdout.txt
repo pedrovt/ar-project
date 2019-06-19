@@ -7,7 +7,7 @@ ILT: loaded table "mips64j" from cache.
 ILT: loaded table "mips64e" from cache.
 ILT: loaded table "ppc32j" from cache.
 ILT: loaded table "ppc32e" from cache.
-Hypervisor TCP control server started (IP 127.0.0.1 port 5378).
+Hypervisor TCP control server started (IP 127.0.0.1 port 6241).
 CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
 C3725 instance 'DMZ_SWL3_2' (id 5):
   VM Status  : 0
