@@ -1,11 +1,11 @@
 # ===== POOLS DE ENDEREÇOS A UTILIZAR =====
 
 # AVEIRO:
-#     200.1.0.1		200.1.0.126	255.255.255.128
+#     200.1.0.129	200.1.0.254	255.255.255.128
 #     10.64.0.0				0.63.255.255
 
 conf t
-ip nat pool AVEIRO_POOL 200.1.0.1 200.1.0.126 netmask 255.255.255.128
+ip nat pool AVEIRO_POOL 200.1.0.129 200.1.0.254 netmask 255.255.255.128
 access-list 2 permit 10.64.0.0 0.63.255.255
 ip nat inside source list 2 pool AVEIRO_POOL
 int INTERFACE_INSIDE
@@ -16,11 +16,11 @@ ip nat outside
 
 
 # BOSTON:
-#     200.1.0.129	200.1.0.254	255.255.255.128
+#     200.1.1.1		200.1.1.126	255.255.255.128
 #     10.128.0.0			0.63.255.255
 
 conf t
-ip nat pool BOSTON_POOL 200.1.0.129 200.1.0.254 netmask 255.255.255.128
+ip nat pool BOSTON_POOL 200.1.1.1 200.1.1.126 netmask 255.255.255.128
 access-list 3 permit 10.128.0.0 0.63.255.255
 ip nat inside source list 3 pool BOSTON_POOL
 int INTERFACE_INSIDE
@@ -31,11 +31,11 @@ ip nat outside
 
 
 # LISBOA:
-#     200.1.1.1		200.1.1.126	255.255.255.128
+#     200.1.1.129	200.1.1.254	255.255.255.128
 #     10.192.0.0			0.63.255.255
 
 conf t
-ip nat pool LISBON_POOL 200.1.1.1 200.1.1.126 netmask 255.255.255.128
+ip nat pool LISBON_POOL 200.1.1.129 200.1.1.254 netmask 255.255.255.128
 access-list 4 permit 10.192.0.0 0.63.255.255
 ip nat inside source list 4 pool LISBON_POOL
 int INTERFACE_INSIDE
