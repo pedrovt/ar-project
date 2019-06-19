@@ -1,18 +1,29 @@
 conf t
 
-int f0/1 
-ip address <IP ADDRESS OF POINT TO POINT CONNECTION TO AV SWL3 2>
-no shut
+access-list 101 permit ip any 10.64.0.0 0.1.255.255
+route-map ForceRoutingAv permit 10
+match ip address 101
+set ip next-hop 10.48.0.2
 
-int f0/0
-ip address <IP ADDRESS OF POINT TO POINT CONNECTION TO ANTENNA LISBON>
-no shut
+end
+write
 
 conf t
-access-list 101 permit ip any <IP>   --VLAN WIFI AVEIRO
-route-map ForceRouting permit 10
-match ip address 101
-set ip next-hop <IP ADDRESS OF POINT TO POINT CONNECTION TO ANTENNA LISBON>
+
+ip routing
+router ospf 1
+router-id 100.1.0.0
+
+int f0/0
+no shut
+ip address 10.48.0.1 255.255.255.252
+ipv6 enable
+ipv6 address 2100:1:1:3000::5/53
 
 int f0/1
-ip policy route-map ForceRouting
+no shut
+ip address 10.112.0.17 255.248.0.0
+ipv6 enable
+ipv6 address 2100:1:1:7000::17/53
+ip ospf 1 area 0
+ip policy route-map ForceRoutingAv
