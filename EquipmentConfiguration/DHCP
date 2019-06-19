@@ -1,0 +1,17 @@
+option domain-name-servers 10.120.0.3;
+
+subnet 10.90.128.0 netmask 255.255.128.0 {
+	range 10.90.192.0 10.90.255.254 ;
+	option routers 10.90.128.1 ;}
+
+subnet 10.91.0.0 netmask 255.255.128.0 {
+	range 10.91.64.0 10.91.127.254;
+	option routers 10.91.0.1;}
+
+subnet 10.106.128.0 netmask 255.255.128.0 {
+	range 10.106.192.0 10.106.255.254;
+	option routers 10.106.128.1;}
+
+subnet 10.107.0.0 netmask 255.255.128.0 {
+	range 10.107.64.0 10.107.127.254;
+	option routers 10.107.0.1;}

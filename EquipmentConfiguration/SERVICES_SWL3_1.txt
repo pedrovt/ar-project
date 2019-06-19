@@ -55,6 +55,7 @@ conf t
 
 ip routing
 ipv6 unicast-routing 
+service dhcp
 
 router ospf 1
 router-id 10.2.0.1 
@@ -65,12 +66,15 @@ router-id 10.2.1.1
 
 int vlan 182
 ipv6 ospf 1 area 0
+ip helper-address 10.120.0.3
 
 int vlan 214
 ipv6 ospf 1 area 0
+ip helper-address 10.120.0.3
 
 int vlan 224
 ipv6 ospf 1 area 0
+ip helper-address 10.120.0.3
 
 end
 write
