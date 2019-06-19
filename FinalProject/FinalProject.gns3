@@ -854,8 +854,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f0/1",
-                            "x": 6,
-                            "y": 51
+                            "x": -111,
+                            "y": -77
                         },
                         "node_id": "83c70b35-9f3e-498c-882a-f962df2a73b6",
                         "port_number": 1
@@ -1727,6 +1727,37 @@
                         },
                         "node_id": "ae1b2fcd-bde3-4240-b8a9-8ad41da71774",
                         "port_number": 10
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "1179dd13-ddd8-44ad-b634-a6d10ccf56b5",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/1",
+                            "x": 2,
+                            "y": -3
+                        },
+                        "node_id": "c0a51e92-5c58-4f1f-8f03-bbeff97e1355",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f1/9",
+                            "x": 56,
+                            "y": 48
+                        },
+                        "node_id": "164c6405-9750-4d5b-b853-620179985032",
+                        "port_number": 9
                     }
                 ],
                 "suspend": false
@@ -2816,8 +2847,8 @@
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
-                "x": -294,
-                "y": 590,
+                "x": -480,
+                "y": 594,
                 "z": 0
             },
             {
@@ -2880,8 +2911,8 @@
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
-                "x": 573,
-                "y": 166,
+                "x": 729,
+                "y": 590,
                 "z": 0
             },
             {

@@ -7,7 +7,7 @@ ILT: loaded table "mips64j" from cache.
 ILT: loaded table "mips64e" from cache.
 ILT: loaded table "ppc32j" from cache.
 ILT: loaded table "ppc32e" from cache.
-Hypervisor TCP control server started (IP 127.0.0.1 port 6231).
+Hypervisor TCP control server started (IP 127.0.0.1 port 1264).
 CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
 NVRAM is empty, setting config register to 0x2142
 C7200 instance 'ANTENNA_AVEIRO' (id 14):
