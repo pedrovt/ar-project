@@ -1,3 +1,18 @@
 conf t
-ip route 0.0.0.0 0.0.0.0 f0/0
 
+int f0/1 
+ip address <IP ADDRESS OF POINT TO POINT CONNECTION TO AV SWL3 2>
+no shut
+
+int f0/0
+ip address <IP ADDRESS OF POINT TO POINT CONNECTION TO ANTENNA LISBON>
+no shut
+
+conf t
+access-list 101 permit ip any <IP>   --VLAN WIFI AVEIRO
+route-map ForceRouting permit 10
+match ip address 101
+set ip next-hop <IP ADDRESS OF POINT TO POINT CONNECTION TO ANTENNA LISBON>
+
+int f0/1
+ip policy route-map ForceRouting

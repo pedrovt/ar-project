@@ -1,3 +1,18 @@
 conf t
-ip route 0.0.0.0 0.0.0.0 f0/0
 
+int f0/1 
+ip address <IP ADDRESS OF INSIDE NETWORK>
+no shut
+
+int f0/0
+ip address <IP ADDRESS OF POINT TO POINT CONNECTION TO ANTENNA AVEIRO>
+no shut
+
+conf t
+access-list 102 permit ip any <IP>   --VLAN WIFI LISBON
+route-map ForceRouting1 permit 10
+match ip address 102
+set ip next-hop <IP ADDRESS OF POINT TO POINT CONNECTION TO ANTENNA AVEIRO>
+
+int f0/1
+ip policy route-map ForceRouting1

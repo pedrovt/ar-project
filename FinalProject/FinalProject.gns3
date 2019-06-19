@@ -3120,8 +3120,8 @@
                 },
                 "symbol": ":/symbols/multilayer_switch.svg",
                 "width": 51,
-                "x": -359,
-                "y": -174,
+                "x": -361,
+                "y": -171,
                 "z": 0
             },
             {
@@ -3236,8 +3236,8 @@
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
-                "x": 349,
-                "y": 291,
+                "x": 348,
+                "y": 288,
                 "z": 0
             }
         ]

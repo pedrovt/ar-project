@@ -4,13 +4,40 @@
 #     200.1.0.129	200.1.0.254	255.255.255.128
 #     10.64.0.0				0.63.255.255
 
+# AVEIRO_ISP1
+conf t
+ip nat Stateful id 1
+primary 10.0.0.1
+peer 10.0.0.9
+mapping-id 101
+end
 conf t
 ip nat pool AVEIRO_POOL 200.1.0.129 200.1.0.254 netmask 255.255.255.128
 access-list 2 permit 10.64.0.0 0.63.255.255
-ip nat inside source list 2 pool AVEIRO_POOL
-int INTERFACE_INSIDE
+ip nat inside source list 2 pool AVEIRO_POOL mapping-id 101 overload
+int f1/0
 ip nat inside
-int INTERFACE_OUTSIDE
+int f1/1
+ip nat inside
+int f0/0
+ip nat outside
+
+# AVEIRO_ISP2
+conf t
+ip nat Stateful id 2
+backup 10.0.0.9
+peer 10.0.0.1
+mapping-id 101
+end
+conf t
+ip nat pool AVEIRO_POOL 200.1.0.129 200.1.0.254 netmask 255.255.255.128
+access-list 2 permit 10.64.0.0 0.63.255.255
+ip nat inside source list 2 pool AVEIRO_POOL mapping-id 101 overload
+int f1/0
+ip nat inside
+int f1/1
+ip nat inside
+int f0/0
 ip nat outside
 
 
@@ -19,28 +46,74 @@ ip nat outside
 #     200.1.1.1		200.1.1.126	255.255.255.128
 #     10.128.0.0			0.63.255.255
 
+# BOSTON_ISP1
+conf t
+ip nat Stateful id 1
+primary 10.128.0.1
+peer 10.128.0.2
+mapping-id 102
+end
 conf t
 ip nat pool BOSTON_POOL 200.1.1.1 200.1.1.126 netmask 255.255.255.128
 access-list 3 permit 10.128.0.0 0.63.255.255
-ip nat inside source list 3 pool BOSTON_POOL
-int INTERFACE_INSIDE
+ip nat inside source list 3 pool BOSTON_POOL mapping-id 102 overload
+int f1/0
 ip nat inside
-int INTERFACE_OUTSIDE
+int f0/0
+ip nat outside
+
+# BOSTON_ISP2
+conf t
+ip nat Stateful id 2
+backup 10.128.0.2
+peer 10.128.0.1
+mapping-id 102
+end
+conf t
+ip nat pool BOSTON_POOL 200.1.1.1 200.1.1.126 netmask 255.255.255.128
+access-list 3 permit 10.128.0.0 0.63.255.255
+ip nat inside source list 3 pool BOSTON_POOL mapping-id 102 overload
+int f1/0
+ip nat inside
+int f0/0
 ip nat outside
 
 
 
-# LISBOA:
+# LISBON:
 #     200.1.1.129	200.1.1.254	255.255.255.128
 #     10.192.0.0			0.63.255.255
 
+# LISBON_ISP1
+conf t
+ip nat Stateful id 1
+primary 10.192.0.1
+peer 10.192.0.2
+mapping-id 103
+end
 conf t
 ip nat pool LISBON_POOL 200.1.1.129 200.1.1.254 netmask 255.255.255.128
 access-list 4 permit 10.192.0.0 0.63.255.255
-ip nat inside source list 4 pool LISBON_POOL
-int INTERFACE_INSIDE
+ip nat inside source list 4 pool LISBON_POOL mapping-id 103 overload
+int f1/0
 ip nat inside
-int INTERFACE_OUTSIDE
+int f0/0
+ip nat outside
+
+# LISBON_ISP2
+conf t
+ip nat Stateful id 2
+primary 10.192.0.2
+peer 10.192.0.1
+mapping-id 103
+end
+conf t
+ip nat pool LISBON_POOL 200.1.1.129 200.1.1.254 netmask 255.255.255.128
+access-list 4 permit 10.192.0.0 0.63.255.255
+ip nat inside source list 4 pool LISBON_POOL mapping-id 103 overload
+int f1/0
+ip nat inside
+int f0/0
 ip nat outside
 
 
