@@ -103,7 +103,7 @@ ip nat outside
 # LISBON_ISP2
 conf t
 ip nat Stateful id 2
-primary 10.192.0.2
+backup 10.192.0.2
 peer 10.192.0.1
 mapping-id 103
 end
