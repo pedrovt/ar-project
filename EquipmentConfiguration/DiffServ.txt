@@ -34,8 +34,6 @@ class EF
 set ip dscp 46
 class AF11
 set ip dscp 10
-class AF23
-set ip dscp 22
 
 end
 write
@@ -83,13 +81,14 @@ service-policy output OUT_SCI
 end
 write
 
+
 #====================================================================================================
 
 # SERVICES_SWL3
 
 conf t
-access-list 182 permit udp ip 10.91.0.0 0.0.127.255 any
-access-list 194 permit udp ip 10.107.0.0 0.0.127.255 any
+access-list 182 permit udp 10.91.0.0 0.0.127.255 any
+access-list 194 permit udp 10.107.0.0 0.0.127.255 any
 
 class-map match-all AF11
 class-map match-all 194
@@ -101,8 +100,6 @@ write
 
 conf t
 policy-map IN_SER
-class EF
-set ip dscp 46
 class AF11
 set ip dscp 10
 class AF23
@@ -154,6 +151,7 @@ service-policy output OUT_SER
 end
 write
 
+
 #====================================================================================================
 
 # AV_SWL3
@@ -191,3 +189,4 @@ service-policy output OUT_AV
 
 end
 write
+
