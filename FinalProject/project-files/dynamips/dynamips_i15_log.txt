@@ -1,0 +1,45 @@
+Jun 20 12:03:21.223 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 20 12:03:21.224 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 24529.
+Jun 20 12:03:21.716 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 12:03:21.717 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 20 12:03:21.717 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 20 12:03:21.718 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\7abf1e3a-c93e-43c3-ac57-14d846f8d36b 
+Jun 20 12:03:21.719 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\7abf1e3a-c93e-43c3-ac57-14d846f8d36b
+Jun 20 12:03:21.719 HYPERVISOR: exec_cmd: vm create DMZ_SWL3_2 5 c3725 
+Jun 20 12:03:21.721 VM: VM DMZ_SWL3_2 created.
+Jun 20 12:03:21.722 HYPERVISOR: exec_cmd: vm set_con_tcp_port DMZ_SWL3_2 5026 
+Jun 20 12:03:21.722 HYPERVISOR: exec_cmd: c3725 get_mac_addr DMZ_SWL3_2 
+Jun 20 12:03:21.723 HYPERVISOR: exec_cmd: vm set_disk0 DMZ_SWL3_2 1 
+Jun 20 12:03:21.723 HYPERVISOR: exec_cmd: vm set_exec_area DMZ_SWL3_2 64 
+Jun 20 12:03:21.724 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 20 12:03:21.724 HYPERVISOR: exec_cmd: vm set_idle_pc DMZ_SWL3_2 0x60a6a1e0 
+Jun 20 12:03:21.726 HYPERVISOR: exec_cmd: vm set_ios DMZ_SWL3_2 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 20 12:03:21.727 HYPERVISOR: exec_cmd: c3725 set_mac_addr DMZ_SWL3_2 c205.194c.0000 
+Jun 20 12:03:21.727 HYPERVISOR: exec_cmd: vm set_nvram DMZ_SWL3_2 256 
+Jun 20 12:03:21.728 HYPERVISOR: exec_cmd: vm set_ram DMZ_SWL3_2 256 
+Jun 20 12:03:21.729 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 20 12:03:21.729 HYPERVISOR: exec_cmd: vm slot_add_binding DMZ_SWL3_2 1 0 NM-16ESW 
+Jun 20 12:03:32.316 HYPERVISOR: exec_cmd: nio create_udp udp-869f0568-f660-483b-97d9-c12f8711876a 10068 127.0.0.1 10069 
+Jun 20 12:03:32.856 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_SWL3_2 1 15 udp-869f0568-f660-483b-97d9-c12f8711876a 
+Jun 20 12:03:32.857 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 20 12:03:36.713 HYPERVISOR: exec_cmd: nio create_udp udp-3ae50d43-3023-4190-9049-857ac1d9d0d6 10136 127.0.0.1 10137 
+Jun 20 12:03:36.715 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_SWL3_2 1 0 udp-3ae50d43-3023-4190-9049-857ac1d9d0d6 
+Jun 20 12:03:36.715 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 20 12:03:36.824 HYPERVISOR: exec_cmd: nio create_udp udp-67b2f589-0d5a-472b-9088-11ef5238aa0e 10142 127.0.0.1 10143 
+Jun 20 12:03:36.826 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_SWL3_2 1 1 udp-67b2f589-0d5a-472b-9088-11ef5238aa0e 
+Jun 20 12:03:36.826 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 20 12:03:38.870 HYPERVISOR: exec_cmd: nio create_udp udp-2f3e4851-9673-4722-b124-f97e6e162938 10190 127.0.0.1 10191 
+Jun 20 12:03:38.873 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ_SWL3_2 1 10 udp-2f3e4851-9673-4722-b124-f97e6e162938 
+Jun 20 12:03:38.873 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 20 12:04:30.083 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jun 20 12:04:30.086 VM: VM Ghost created.
+Jun 20 12:04:30.087 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 20 12:04:30.087 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 20 12:04:30.087 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-256.ghost' 
+Jun 20 12:04:30.088 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 20 12:04:30.088 HYPERVISOR: exec_cmd: vm set_config DMZ_SWL3_2 configs\i5_startup-config.cfg 
+Jun 20 12:04:30.089 HYPERVISOR: exec_cmd: vm start DMZ_SWL3_2 
+Jun 20 12:27:55.393 HYPERVISOR: exec_cmd: vm get_status DMZ_SWL3_2 
+Jun 20 12:27:55.394 HYPERVISOR: exec_cmd: vm stop DMZ_SWL3_2 
+Jun 20 12:27:55.604 VM: VM DMZ_SWL3_2 shutdown.
+Jun 20 12:27:55.605 HYPERVISOR: exec_cmd: vm extract_config DMZ_SWL3_2 

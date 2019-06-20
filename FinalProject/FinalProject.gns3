@@ -2569,8 +2569,8 @@
                 "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
-                "x": -903,
-                "y": -168,
+                "x": -901,
+                "y": -167,
                 "z": 0
             },
             {
@@ -2628,7 +2628,7 @@
                 },
                 "symbol": ":/symbols/vbox_guest.svg",
                 "width": 65,
-                "x": -899,
+                "x": -904,
                 "y": -545,
                 "z": 0
             },
@@ -2674,10 +2674,11 @@
                             "vlan": 240
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet3",
                             "port_number": 3,
                             "type": "access",
-                            "vlan": 1
+                            "vlan": 240
                         },
                         {
                             "name": "Ethernet4",
@@ -3223,7 +3224,7 @@
                 },
                 "symbol": ":/symbols/multilayer_switch.svg",
                 "width": 51,
-                "x": -475,
+                "x": -473,
                 "y": 429,
                 "z": 0
             },

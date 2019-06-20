@@ -1,0 +1,15 @@
+Jun 20 12:03:15.270 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 20 12:03:15.271 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 24481.
+Jun 20 12:03:15.754 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 12:03:15.755 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 20 12:03:15.756 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 20 12:03:15.757 HYPERVISOR: exec_cmd: ethsw create BOSTON_SW 
+Jun 20 12:03:26.491 HYPERVISOR: exec_cmd: nio create_udp udp-deeedaa3-c5a7-4eb6-9439-28cc207c3795 10001 127.0.0.1 10000 
+Jun 20 12:03:26.491 HYPERVISOR: exec_cmd: ethsw add_nio BOSTON_SW udp-deeedaa3-c5a7-4eb6-9439-28cc207c3795 
+Jun 20 12:03:26.496 HYPERVISOR: exec_cmd: ethsw set_access_port BOSTON_SW udp-deeedaa3-c5a7-4eb6-9439-28cc207c3795 1 
+Jun 20 12:03:27.125 HYPERVISOR: exec_cmd: nio create_udp udp-3b01e7d0-5b55-4847-860a-ca2dbfe7d6c4 10005 127.0.0.1 10004 
+Jun 20 12:03:27.126 HYPERVISOR: exec_cmd: ethsw add_nio BOSTON_SW udp-3b01e7d0-5b55-4847-860a-ca2dbfe7d6c4 
+Jun 20 12:03:27.144 HYPERVISOR: exec_cmd: ethsw set_access_port BOSTON_SW udp-3b01e7d0-5b55-4847-860a-ca2dbfe7d6c4 1 
+Jun 20 12:03:27.236 HYPERVISOR: exec_cmd: nio create_udp udp-0a24cf6e-665a-4586-8342-308b82dd69f4 10008 127.0.0.1 10009 
+Jun 20 12:03:27.236 HYPERVISOR: exec_cmd: ethsw add_nio BOSTON_SW udp-0a24cf6e-665a-4586-8342-308b82dd69f4 
+Jun 20 12:03:27.249 HYPERVISOR: exec_cmd: ethsw set_access_port BOSTON_SW udp-0a24cf6e-665a-4586-8342-308b82dd69f4 1 

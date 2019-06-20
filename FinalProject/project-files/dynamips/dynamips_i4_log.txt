@@ -1,0 +1,18 @@
+Jun 20 12:03:14.759 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 20 12:03:14.760 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 24478.
+Jun 20 12:03:15.215 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 12:03:15.216 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 20 12:03:15.216 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 20 12:03:15.216 HYPERVISOR: exec_cmd: ethsw create LISBON_SW 
+Jun 20 12:03:27.335 HYPERVISOR: exec_cmd: nio create_udp udp-537c07e7-5ad2-4a39-bea8-e6ca74b8b12a 10010 127.0.0.1 10011 
+Jun 20 12:03:27.336 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-537c07e7-5ad2-4a39-bea8-e6ca74b8b12a 
+Jun 20 12:03:27.353 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-537c07e7-5ad2-4a39-bea8-e6ca74b8b12a 1 
+Jun 20 12:03:27.470 HYPERVISOR: exec_cmd: nio create_udp udp-0c0056b9-3d5c-457d-9e9e-9a81c31faef2 10012 127.0.0.1 10013 
+Jun 20 12:03:27.470 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-0c0056b9-3d5c-457d-9e9e-9a81c31faef2 
+Jun 20 12:03:27.479 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-0c0056b9-3d5c-457d-9e9e-9a81c31faef2 1 
+Jun 20 12:03:31.466 HYPERVISOR: exec_cmd: nio create_udp udp-18341b15-818c-4d79-8a49-738443f2a3de 10054 127.0.0.1 10055 
+Jun 20 12:03:31.467 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-18341b15-818c-4d79-8a49-738443f2a3de 
+Jun 20 12:03:31.470 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-18341b15-818c-4d79-8a49-738443f2a3de 1 
+Jun 20 12:03:32.208 HYPERVISOR: exec_cmd: nio create_udp udp-072fbc03-7ac9-40e2-bc06-0b3dddeeaeb0 10063 127.0.0.1 10062 
+Jun 20 12:03:32.209 HYPERVISOR: exec_cmd: ethsw add_nio LISBON_SW udp-072fbc03-7ac9-40e2-bc06-0b3dddeeaeb0 
+Jun 20 12:03:32.216 HYPERVISOR: exec_cmd: ethsw set_access_port LISBON_SW udp-072fbc03-7ac9-40e2-bc06-0b3dddeeaeb0 1 

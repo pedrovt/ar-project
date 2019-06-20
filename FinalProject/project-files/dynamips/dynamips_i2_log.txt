@@ -1,0 +1,47 @@
+Jun 20 12:03:13.567 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 20 12:03:13.568 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 24471.
+Jun 20 12:03:14.055 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 12:03:14.055 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 20 12:03:14.056 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 20 12:03:14.056 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\6c5ca248-342e-40b0-a0cb-261bbb645891 
+Jun 20 12:03:14.059 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\6c5ca248-342e-40b0-a0cb-261bbb645891
+Jun 20 12:03:14.059 HYPERVISOR: exec_cmd: vm create BOSTON_ISP1 3 c7200 
+Jun 20 12:03:14.061 VM: VM BOSTON_ISP1 created.
+Jun 20 12:03:14.061 HYPERVISOR: exec_cmd: vm set_con_tcp_port BOSTON_ISP1 5002 
+Jun 20 12:03:14.061 HYPERVISOR: exec_cmd: c7200 get_mac_addr BOSTON_ISP1 
+Jun 20 12:03:14.062 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:03:14.062 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP1 0 0 C7200-IO-FE 
+Jun 20 12:03:14.062 HYPERVISOR: exec_cmd: vm set_disk0 BOSTON_ISP1 0 
+Jun 20 12:03:14.062 HYPERVISOR: exec_cmd: vm set_exec_area BOSTON_ISP1 64 
+Jun 20 12:03:14.063 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:03:14.063 HYPERVISOR: exec_cmd: vm set_idle_pc BOSTON_ISP1 0x601712a8 
+Jun 20 12:03:14.064 HYPERVISOR: exec_cmd: vm set_ios BOSTON_ISP1 C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 20 12:03:14.065 HYPERVISOR: exec_cmd: c7200 set_mac_addr BOSTON_ISP1 ca03.6794.0000 
+Jun 20 12:03:14.066 HYPERVISOR: exec_cmd: vm set_nvram BOSTON_ISP1 512 
+Jun 20 12:03:14.066 HYPERVISOR: exec_cmd: vm set_ram BOSTON_ISP1 512 
+Jun 20 12:03:14.066 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:03:14.067 HYPERVISOR: exec_cmd: vm slot_remove_binding BOSTON_ISP1 0 0 
+Jun 20 12:03:14.067 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:03:14.067 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP1 0 0 C7200-IO-2FE 
+Jun 20 12:03:14.067 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:03:14.068 HYPERVISOR: exec_cmd: vm slot_add_binding BOSTON_ISP1 1 0 PA-2FE-TX 
+Jun 20 12:03:25.933 HYPERVISOR: exec_cmd: nio create_udp udp-324276e5-1e12-4963-bd8a-4b634bea1519 10002 127.0.0.1 10003 
+Jun 20 12:03:26.484 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BOSTON_ISP1 1 0 udp-324276e5-1e12-4963-bd8a-4b634bea1519 
+Jun 20 12:03:26.484 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:03:30.109 HYPERVISOR: exec_cmd: nio create_udp udp-67eaaddb-01bb-4430-a49a-4c77f2e04133 10042 127.0.0.1 10043 
+Jun 20 12:03:30.111 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BOSTON_ISP1 0 0 udp-67eaaddb-01bb-4430-a49a-4c77f2e04133 
+Jun 20 12:03:30.111 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:04:26.307 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 20 12:04:26.309 VM: VM Ghost created.
+Jun 20 12:04:26.309 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Pedro/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 20 12:04:26.310 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 20 12:04:26.310 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost' 
+Jun 20 12:04:26.311 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:04:26.311 HYPERVISOR: exec_cmd: vm set_config BOSTON_ISP1 configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Jun 20 12:04:26.312 HYPERVISOR: exec_cmd: vm start BOSTON_ISP1 
+Jun 20 12:04:56.857 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP1 
+Jun 20 12:05:56.855 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP1 
+Jun 20 12:27:53.799 HYPERVISOR: exec_cmd: vm get_status BOSTON_ISP1 
+Jun 20 12:27:53.799 HYPERVISOR: exec_cmd: vm stop BOSTON_ISP1 
+Jun 20 12:27:54.008 VM: VM BOSTON_ISP1 shutdown.
+Jun 20 12:27:54.010 HYPERVISOR: exec_cmd: vm extract_config BOSTON_ISP1 

@@ -1,0 +1,49 @@
+Jun 20 12:03:23.102 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 20 12:03:23.106 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 24539.
+Jun 20 12:03:23.518 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 12:03:23.519 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 20 12:03:23.519 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 20 12:03:23.519 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\fefd9a62-aa83-4a09-b18b-129023a891cc 
+Jun 20 12:03:23.519 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\fefd9a62-aa83-4a09-b18b-129023a891cc
+Jun 20 12:03:23.520 HYPERVISOR: exec_cmd: vm create SERVICES_SWL3_1 12 c3725 
+Jun 20 12:03:23.522 VM: VM SERVICES_SWL3_1 created.
+Jun 20 12:03:23.522 HYPERVISOR: exec_cmd: vm set_con_tcp_port SERVICES_SWL3_1 5031 
+Jun 20 12:03:23.522 HYPERVISOR: exec_cmd: c3725 get_mac_addr SERVICES_SWL3_1 
+Jun 20 12:03:23.523 HYPERVISOR: exec_cmd: vm set_disk0 SERVICES_SWL3_1 1 
+Jun 20 12:03:23.523 HYPERVISOR: exec_cmd: vm set_exec_area SERVICES_SWL3_1 64 
+Jun 20 12:03:23.523 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 20 12:03:23.524 HYPERVISOR: exec_cmd: vm set_idle_pc SERVICES_SWL3_1 0x60a6a1e0 
+Jun 20 12:03:23.524 HYPERVISOR: exec_cmd: vm set_ios SERVICES_SWL3_1 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 20 12:03:23.525 HYPERVISOR: exec_cmd: c3725 set_mac_addr SERVICES_SWL3_1 c20c.3ef0.0000 
+Jun 20 12:03:23.525 HYPERVISOR: exec_cmd: vm set_nvram SERVICES_SWL3_1 256 
+Jun 20 12:03:23.526 HYPERVISOR: exec_cmd: vm set_ram SERVICES_SWL3_1 256 
+Jun 20 12:03:23.526 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 20 12:03:23.526 HYPERVISOR: exec_cmd: vm slot_add_binding SERVICES_SWL3_1 1 0 NM-16ESW 
+Jun 20 12:03:36.911 HYPERVISOR: exec_cmd: nio create_udp udp-3716aedb-6cf0-4a79-82b3-08561a3bb7c3 10148 127.0.0.1 10149 
+Jun 20 12:03:37.451 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_SWL3_1 1 0 udp-3716aedb-6cf0-4a79-82b3-08561a3bb7c3 
+Jun 20 12:03:37.452 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 20 12:03:37.545 HYPERVISOR: exec_cmd: nio create_udp udp-e80ac390-303d-4b41-bc5d-e42ba87e0bae 10154 127.0.0.1 10155 
+Jun 20 12:03:37.549 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_SWL3_1 1 1 udp-e80ac390-303d-4b41-bc5d-e42ba87e0bae 
+Jun 20 12:03:37.550 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 20 12:03:38.661 HYPERVISOR: exec_cmd: nio create_udp udp-d37f35fd-b4a8-4081-a49e-1c85cef09f3e 10180 127.0.0.1 10181 
+Jun 20 12:03:38.664 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_SWL3_1 1 15 udp-d37f35fd-b4a8-4081-a49e-1c85cef09f3e 
+Jun 20 12:03:38.664 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 20 12:03:39.096 HYPERVISOR: exec_cmd: nio create_udp udp-60e8b810-302a-48ab-82be-567def895d08 10200 127.0.0.1 10201 
+Jun 20 12:03:39.098 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SERVICES_SWL3_1 1 10 udp-60e8b810-302a-48ab-82be-567def895d08 
+Jun 20 12:03:39.099 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 20 12:04:44.861 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jun 20 12:04:44.864 VM: VM Ghost created.
+Jun 20 12:04:44.866 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 20 12:04:44.868 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 20 12:04:44.870 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-256.ghost' 
+Jun 20 12:04:44.872 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 20 12:04:44.873 HYPERVISOR: exec_cmd: vm set_config SERVICES_SWL3_1 configs\i12_startup-config.cfg 
+Jun 20 12:04:44.876 HYPERVISOR: exec_cmd: vm start SERVICES_SWL3_1 
+Jun 20 12:12:58.821 HYPERVISOR: exec_cmd: vm extract_config SERVICES_SWL3_1 
+Jun 20 12:12:58.836 HYPERVISOR: exec_cmd: vm extract_config SERVICES_SWL3_1 
+Jun 20 12:13:28.813 HYPERVISOR: exec_cmd: vm extract_config SERVICES_SWL3_1 
+Jun 20 12:13:28.837 HYPERVISOR: exec_cmd: vm extract_config SERVICES_SWL3_1 
+Jun 20 12:27:55.738 HYPERVISOR: exec_cmd: vm get_status SERVICES_SWL3_1 
+Jun 20 12:27:55.738 HYPERVISOR: exec_cmd: vm stop SERVICES_SWL3_1 
+Jun 20 12:27:55.951 VM: VM SERVICES_SWL3_1 shutdown.
+Jun 20 12:27:55.952 HYPERVISOR: exec_cmd: vm extract_config SERVICES_SWL3_1 

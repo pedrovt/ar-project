@@ -1,0 +1,64 @@
+Jun 20 12:03:24.097 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 20 12:03:24.098 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 24546.
+Jun 20 12:03:24.588 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 12:03:24.589 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips 
+Jun 20 12:03:24.589 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips
+Jun 20 12:03:24.589 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\0388a676-5732-4935-a915-98a02a521d73 
+Jun 20 12:03:24.591 GENERAL: working_dir=C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\0388a676-5732-4935-a915-98a02a521d73
+Jun 20 12:03:24.591 HYPERVISOR: exec_cmd: vm create AV_SWL3_1 8 c3725 
+Jun 20 12:03:24.593 VM: VM AV_SWL3_1 created.
+Jun 20 12:03:24.594 HYPERVISOR: exec_cmd: vm set_con_tcp_port AV_SWL3_1 5034 
+Jun 20 12:03:24.594 HYPERVISOR: exec_cmd: c3725 get_mac_addr AV_SWL3_1 
+Jun 20 12:03:24.594 HYPERVISOR: exec_cmd: vm set_disk0 AV_SWL3_1 1 
+Jun 20 12:03:24.594 HYPERVISOR: exec_cmd: vm set_exec_area AV_SWL3_1 64 
+Jun 20 12:03:24.595 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:24.595 HYPERVISOR: exec_cmd: vm set_idle_pc AV_SWL3_1 0x60a6a1e0 
+Jun 20 12:03:24.596 HYPERVISOR: exec_cmd: vm set_ios AV_SWL3_1 C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 20 12:03:24.597 HYPERVISOR: exec_cmd: c3725 set_mac_addr AV_SWL3_1 c208.2268.0000 
+Jun 20 12:03:24.597 HYPERVISOR: exec_cmd: vm set_nvram AV_SWL3_1 256 
+Jun 20 12:03:24.597 HYPERVISOR: exec_cmd: vm set_ram AV_SWL3_1 256 
+Jun 20 12:03:24.598 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:24.598 HYPERVISOR: exec_cmd: vm slot_add_binding AV_SWL3_1 1 0 NM-16ESW 
+Jun 20 12:03:34.129 HYPERVISOR: exec_cmd: nio create_udp udp-b5302c32-9e1b-4d94-b515-1b5f8f3b7e08 10078 127.0.0.1 10079 
+Jun 20 12:03:34.659 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 1 0 udp-b5302c32-9e1b-4d94-b515-1b5f8f3b7e08 
+Jun 20 12:03:34.659 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:35.391 HYPERVISOR: exec_cmd: nio create_udp udp-b6b0df98-3b8f-4450-afb0-927f9aab4bfc 10090 127.0.0.1 10091 
+Jun 20 12:03:35.394 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 1 1 udp-b6b0df98-3b8f-4450-afb0-927f9aab4bfc 
+Jun 20 12:03:35.394 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:35.596 HYPERVISOR: exec_cmd: nio create_udp udp-6b24e5c9-3b87-472c-b6ab-59a5a0e0e41f 10100 127.0.0.1 10101 
+Jun 20 12:03:35.599 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 0 0 udp-6b24e5c9-3b87-472c-b6ab-59a5a0e0e41f 
+Jun 20 12:03:35.600 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:35.690 HYPERVISOR: exec_cmd: nio create_udp udp-e0b50a76-6330-4687-9705-69b43e80fe8a 10106 127.0.0.1 10107 
+Jun 20 12:03:35.693 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 0 1 udp-e0b50a76-6330-4687-9705-69b43e80fe8a 
+Jun 20 12:03:35.693 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:36.524 HYPERVISOR: exec_cmd: nio create_udp udp-91be8e35-85aa-4703-bfa7-a39e3464c89c 10126 127.0.0.1 10127 
+Jun 20 12:03:36.527 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 1 4 udp-91be8e35-85aa-4703-bfa7-a39e3464c89c 
+Jun 20 12:03:36.527 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:36.722 HYPERVISOR: exec_cmd: nio create_udp udp-33efc17c-9adb-48db-9a26-685c9a234eae 10138 127.0.0.1 10139 
+Jun 20 12:03:36.725 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 1 5 udp-33efc17c-9adb-48db-9a26-685c9a234eae 
+Jun 20 12:03:36.725 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:37.460 HYPERVISOR: exec_cmd: nio create_udp udp-24e1c2fa-4675-4326-a58e-d2c31c5cf729 10150 127.0.0.1 10151 
+Jun 20 12:03:37.462 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 1 2 udp-24e1c2fa-4675-4326-a58e-d2c31c5cf729 
+Jun 20 12:03:37.463 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:38.203 HYPERVISOR: exec_cmd: nio create_udp udp-4afb25aa-d01d-417d-a6f9-e93c4ee1e412 10162 127.0.0.1 10163 
+Jun 20 12:03:38.205 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 1 3 udp-4afb25aa-d01d-417d-a6f9-e93c4ee1e412 
+Jun 20 12:03:38.206 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:03:39.210 HYPERVISOR: exec_cmd: nio create_udp udp-0e4221ba-8b22-49e4-ba09-1e9b29c77be6 10206 127.0.0.1 10207 
+Jun 20 12:03:39.212 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AV_SWL3_1 1 10 udp-0e4221ba-8b22-49e4-ba09-1e9b29c77be6 
+Jun 20 12:03:39.212 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:04:58.736 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jun 20 12:04:58.738 VM: VM Ghost created.
+Jun 20 12:04:58.739 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Pedro/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 20 12:04:58.739 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 20 12:04:58.740 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Pedro\Universidade de Aveiro\Paulo Vasconcelos - Projeto Final\FinalProject\project-files\dynamips\c3725-advipservicesk9-mz.124-21.image-256.ghost' 
+Jun 20 12:04:58.740 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:04:58.741 HYPERVISOR: exec_cmd: vm set_config AV_SWL3_1 configs\i8_startup-config.cfg 
+Jun 20 12:04:58.741 HYPERVISOR: exec_cmd: vm start AV_SWL3_1 
+Jun 20 12:14:10.382 HYPERVISOR: exec_cmd: vm extract_config AV_SWL3_1 
+Jun 20 12:14:10.395 HYPERVISOR: exec_cmd: vm extract_config AV_SWL3_1 
+Jun 20 12:14:40.385 HYPERVISOR: exec_cmd: vm extract_config AV_SWL3_1 
+Jun 20 12:14:40.403 HYPERVISOR: exec_cmd: vm extract_config AV_SWL3_1 
+Jun 20 12:27:55.963 HYPERVISOR: exec_cmd: vm get_status AV_SWL3_1 
+Jun 20 12:27:55.965 HYPERVISOR: exec_cmd: vm stop AV_SWL3_1 
+Jun 20 12:27:56.274 VM: VM AV_SWL3_1 shutdown.
+Jun 20 12:27:56.275 HYPERVISOR: exec_cmd: vm extract_config AV_SWL3_1 

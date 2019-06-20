@@ -1,0 +1,289 @@
+Jun 20 12:04:26.308 VTTY: Console port: waiting connection on tcp port 5000 for protocol IPv4 (FD 12)
+Jun 20 12:04:26.359 CONSOLE: console managed by I/O board
+Jun 20 12:04:26.832 C7200_BOOT: starting instance (CPU0 PC=0xffffffffbfc00000,idle_pc=0x601712a8,JIT on)
+Jun 20 12:04:26.833 CPU0: CPU_STATE: Starting CPU (old state=2)...
+Jun 20 12:04:26.920 ROM: Microcode has started.
+Jun 20 12:04:26.926 ROM: trying to read bootvar 'WARM_REBOOT'
+Jun 20 12:04:26.929 CPU0: IO_FPGA: read from addr 0x3a0, pc=0xffffffff8011f524 (size=2)
+Jun 20 12:04:26.961 ROM: unhandled syscall 0x00000032 at pc=0x60648388 (a1=0x00000000,a2=0x66680000,a3=0x66680000)
+Jun 20 12:04:26.970 CPU0: IO_FPGA: read from addr 0x224, pc=0x60120808 (size=1)
+Jun 20 12:04:27.320 ROM: trying to read bootvar 'IOMEM_SIZE'
+Jun 20 12:04:27.325 ROM: trying to read bootvar 'RANDOM_NUM'
+Jun 20 12:04:27.355 CPU0: IO_FPGA: write to addr 0x398, value=0x2000000, pc=0x60120d2c (size=4)
+Jun 20 12:04:27.355 CPU0: IO_FPGA: write to addr 0x398, value=0x0, pc=0x60120dac (size=4)
+Jun 20 12:04:27.356 CPU0: MP_FPGA: writing reg 0x70 at pc=0x6017153c (data=0x7e)
+Jun 20 12:04:27.357 CPU0: PCI: read request for device 'gt64120' at pc=0x6014d41c: bus=0,device=0,function=0,reg=0x00
+Jun 20 12:04:27.357 CPU0: PCI: read request for device 'gt64120' at pc=0x6014d420: bus=0,device=0,function=0,reg=0x00
+Jun 20 12:04:27.357 CPU0: PCI: read request for device 'gt64120' at pc=0x6014d1cc: bus=0,device=0,function=0,reg=0x08
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x00000000) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x10
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x00000000) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x10
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x00000000) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x90
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x00000000) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x90
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x10000000) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x14
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x10000000) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x14
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x10000000) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x94
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x10000000) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x94
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x14000000) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x20
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x14000000) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x20
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x14000000) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0xa0
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x14000000) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0xa0
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x00000146) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x04
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x00000146) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x04
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x00000146) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x84
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x00000146) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x84
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x0000000f) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x0c
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x0000000f) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x0c
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x0000000f) for device 'gt64120' at pc=0x6014d318: bus=0,device=0,function=0,reg=0x8c
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x0000000f) for device 'gt64120' at pc=0x6014d31c: bus=0,device=0,function=0,reg=0x8c
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0xc0000000) for unknown device at pc=0x6014d318 (bus=0,device=0,function=1,reg=0x10).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0xc0000000) for unknown device at pc=0x6014d31c (bus=0,device=0,function=1,reg=0x10).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0xc0000000) for unknown device at pc=0x6014d318 (bus=0,device=0,function=1,reg=0x90).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0xc0000000) for unknown device at pc=0x6014d31c (bus=0,device=0,function=1,reg=0x90).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0xd0000000) for unknown device at pc=0x6014d318 (bus=0,device=0,function=1,reg=0x14).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0xd0000000) for unknown device at pc=0x6014d31c (bus=0,device=0,function=1,reg=0x14).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0xd0000000) for unknown device at pc=0x6014d318 (bus=0,device=0,function=1,reg=0x94).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0xd0000000) for unknown device at pc=0x6014d31c (bus=0,device=0,function=1,reg=0x94).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x000000c0) for unknown device at pc=0x6014d318 (bus=0,device=0,function=1,reg=0x1c).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x000000c0) for unknown device at pc=0x6014d31c (bus=0,device=0,function=1,reg=0x1c).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x000000c0) for unknown device at pc=0x6014d318 (bus=0,device=0,function=1,reg=0x9c).
+Jun 20 12:04:27.357 CPU0: PCI: write request (data=0x000000c0) for unknown device at pc=0x6014d31c (bus=0,device=0,function=1,reg=0x9c).
+Jun 20 12:04:27.359 CPU0: PCI: read request for device 'dec21050' at pc=0x6014d41c: bus=0,device=1,function=0,reg=0x00
+Jun 20 12:04:27.359 CPU0: PCI: read request for device 'dec21050' at pc=0x6014d420: bus=0,device=1,function=0,reg=0x00
+Jun 20 12:04:27.359 CPU0: PCI: read request for device 'dec21050' at pc=0x6014d41c: bus=0,device=1,function=0,reg=0x40
+Jun 20 12:04:27.359 CPU0: PCI: read request for device 'dec21050' at pc=0x6014d420: bus=0,device=1,function=0,reg=0x40
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00000147) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x04
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00000147) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x04
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00002e10) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x0c
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00002e10) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x0c
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x18020100) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x18
+Jun 20 12:04:27.359 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 02
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x18020100) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x18
+Jun 20 12:04:27.359 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 02
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0xffff3f00) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x1c
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0xffff3f00) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x1c
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x48704000) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x20
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x48704000) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x20
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x0000ff00) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x24
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x0000ff00) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x24
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00030000) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x3c
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00030000) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x3c
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00100000) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x40
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00100000) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x40
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00009020) for device 'dec21050' at pc=0x6014d2d8: bus=0,device=1,function=0,reg=0x44
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00009020) for device 'dec21050' at pc=0x6014d2e4: bus=0,device=1,function=0,reg=0x44
+Jun 20 12:04:27.359 CPU0: PCI: read request for device 'clpd6729' at pc=0x6014d41c: bus=2,device=16,function=0,reg=0x00
+Jun 20 12:04:27.359 CPU0: PCI: read request for device 'clpd6729' at pc=0x6014d420: bus=2,device=16,function=0,reg=0x00
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x000001c3) for device 'clpd6729' at pc=0x6014d2d8: bus=2,device=16,function=0,reg=0x04
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x000001c3) for device 'clpd6729' at pc=0x6014d2e4: bus=2,device=16,function=0,reg=0x04
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00000400) for device 'clpd6729' at pc=0x6014d2d8: bus=2,device=16,function=0,reg=0x10
+Jun 20 12:04:27.359 CPU0: PCI: write request (data=0x00000400) for device 'clpd6729' at pc=0x6014d2e4: bus=2,device=16,function=0,reg=0x10
+Jun 20 12:04:28.766 ROM: trying to read bootvar 'BOOT'
+Jun 20 12:04:28.766 ROM: trying to read bootvar 'CONFIG_FILE'
+Jun 20 12:04:28.766 ROM: trying to read bootvar 'BOOTLDR'
+Jun 20 12:04:28.766 ROM: trying to read bootvar 'RSHELF'
+Jun 20 12:04:28.766 ROM: trying to read bootvar 'DSHELF'
+Jun 20 12:04:28.767 ROM: trying to read bootvar 'DSHELFINFO'
+Jun 20 12:04:28.767 ROM: trying to read bootvar 'RESET_COUNTER'
+Jun 20 12:04:28.767 ROM: trying to read bootvar 'CHRG_LOCRECSN'
+Jun 20 12:04:28.767 ROM: trying to read bootvar 'CHRG_ID'
+Jun 20 12:04:28.767 ROM: trying to read bootvar 'SLOTCACHE'
+Jun 20 12:04:28.767 ROM: trying to read bootvar 'DIAG'
+Jun 20 12:04:28.767 ROM: trying to read bootvar 'WARM_REBOOT'
+Jun 20 12:04:29.846 CPU0: JIT: partial JIT flush (count=858)
+Jun 20 12:04:29.923 ROM: trying to read bootvar 'PRST_VBL_DEBUG'
+Jun 20 12:04:29.926 ROM: trying to read bootvar 'PRST_IFS_PRFX'
+Jun 20 12:04:30.030 ROM: unhandled syscall 0x0000007c at pc=0x60648388 (a1=0x00000001,a2=0x67560000,a3=0x00000096)
+Jun 20 12:04:30.031 ROM: unhandled syscall 0x0000007c at pc=0x60648388 (a1=0x00000000,a2=0x00000001,a3=0x00000009)
+Jun 20 12:04:30.031 CPU0: PCI: read request for device 'gt64120' at pc=0x60177414: bus=0,device=0,function=0,reg=0x08
+Jun 20 12:04:30.031 CPU0: CLPD6729: ext reg index 0x03 at pc=0x6017ea78
+Jun 20 12:04:30.031 CPU0: CLPD6729: ext reg index 0x03 at pc=0x6017ea78
+Jun 20 12:04:30.036 CPU0: CLPD6729: ext reg index 0x09 at pc=0x6017ea78
+Jun 20 12:04:30.036 CPU0: CLPD6729: ext reg index 0x09 at pc=0x6017ea78
+Jun 20 12:04:30.036 CPU0: CLPD6729: ext reg index 0x05 at pc=0x6017ea78
+Jun 20 12:04:30.036 CPU0: CLPD6729: ext reg index 0x05 at pc=0x6017ea78
+Jun 20 12:04:30.127 ROM: trying to read bootvar 'PROCESS_ACCOUNTING'
+Jun 20 12:04:30.128 ROM: trying to read bootvar 'PRST_VBL_SHOW'
+Jun 20 12:04:30.128 ROM: trying to read bootvar 'PRST_VBL_NUKE'
+Jun 20 12:04:30.183 Calendar: reset
+Jun 20 12:04:30.257 ROM: trying to set bootvar 'BSI=0'
+Jun 20 12:04:30.435 CPU0: JIT: flushing data structures (compiled pages=960)
+Jun 20 12:04:30.525 ROM: trying to read bootvar 'CONFIG_FILE'
+Jun 20 12:04:30.530 ROM: trying to read bootvar 'BOOTLDR'
+Jun 20 12:04:30.811 CPU0: MP_FPGA: writing reg 0x70 at pc=0x60175808 (data=0x2)
+Jun 20 12:04:31.077 CPU0: PCI: read request for device 'dec21150' at pc=0x6014d41c: bus=0,device=7,function=0,reg=0x00
+Jun 20 12:04:31.077 CPU0: PCI: read request for device 'dec21150' at pc=0x6014d420: bus=0,device=7,function=0,reg=0x00
+Jun 20 12:04:31.077 CPU0: PCI: read request for device 'dec21150' at pc=0x6014d41c: bus=0,device=7,function=0,reg=0x08
+Jun 20 12:04:31.077 CPU0: PCI: read request for device 'dec21150' at pc=0x6014d420: bus=0,device=7,function=0,reg=0x08
+Jun 20 12:04:31.077 CPU0: PCI: read request for device 'dec21150' at pc=0x6014d41c: bus=0,device=7,function=0,reg=0x00
+Jun 20 12:04:31.077 CPU0: PCI: read request for device 'dec21150' at pc=0x6014d420: bus=0,device=7,function=0,reg=0x00
+Jun 20 12:04:31.078 CPU0: PCI: read request for device 'dec21150' at pc=0x6014d41c: bus=0,device=7,function=0,reg=0x40
+Jun 20 12:04:31.078 CPU0: PCI: read request for device 'dec21150' at pc=0x6014d420: bus=0,device=7,function=0,reg=0x40
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0xffff0000) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x04
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0xffff0000) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x04
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x00002e10) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x0c
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x00002e10) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x0c
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x18050504) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x18
+Jun 20 12:04:31.078 PCI: PCI bridge 0,7,0 -> pri: 04, sec: 05, sub: 05
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x18050504) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x18
+Jun 20 12:04:31.078 PCI: PCI bridge 0,7,0 -> pri: 04, sec: 05, sub: 05
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x02805f40) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x1c
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x02805f40) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x1c
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x48f04880) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x20
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x48f04880) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x20
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x0001ff01) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x24
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x0001ff01) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x24
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x00000000) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x30
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x00000000) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x30
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x03030000) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x3c
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x03030000) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x3c
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x02000000) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x40
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x02000000) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x40
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x00000000) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x64
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x00000000) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x64
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x000001ff) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x68
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x000001ff) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x68
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x00000147) for device 'dec21150' at pc=0x6014d2d8: bus=0,device=7,function=0,reg=0x04
+Jun 20 12:04:31.078 CPU0: PCI: write request (data=0x00000147) for device 'dec21150' at pc=0x6014d2e4: bus=0,device=7,function=0,reg=0x04
+Jun 20 12:04:31.312 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d41c: bus=1,device=1,function=0,reg=0x00
+Jun 20 12:04:31.312 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d420: bus=1,device=1,function=0,reg=0x00
+Jun 20 12:04:31.312 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d41c: bus=1,device=1,function=0,reg=0x00
+Jun 20 12:04:31.312 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d420: bus=1,device=1,function=0,reg=0x00
+Jun 20 12:04:31.312 CPU0: PCI: write request (data=0x00000156) for device 'C7200-IO-2FE(0)' at pc=0x6014d2d8: bus=1,device=1,function=0,reg=0x04
+Jun 20 12:04:31.312 CPU0: PCI: write request (data=0x00000156) for device 'C7200-IO-2FE(0)' at pc=0x6014d2e4: bus=1,device=1,function=0,reg=0x04
+Jun 20 12:04:31.313 CPU0: PCI: write request (data=0x48100000) for device 'C7200-IO-2FE(0)' at pc=0x6014d2d8: bus=1,device=1,function=0,reg=0x10
+Jun 20 12:04:31.313 C7200-IO-2FE(0): registers are mapped at 0x48100000
+Jun 20 12:04:31.313 CPU0: PCI: write request (data=0x48100000) for device 'C7200-IO-2FE(0)' at pc=0x6014d2e4: bus=1,device=1,function=0,reg=0x10
+Jun 20 12:04:31.313 C7200-IO-2FE(0): registers are mapped at 0x48100000
+Jun 20 12:04:31.313 CPU0: PCI: write request (data=0x00000000) for device 'C7200-IO-2FE(0)' at pc=0x6014d2d8: bus=1,device=1,function=0,reg=0x14
+Jun 20 12:04:31.313 CPU0: PCI: write request (data=0x00000000) for device 'C7200-IO-2FE(0)' at pc=0x6014d2e4: bus=1,device=1,function=0,reg=0x14
+Jun 20 12:04:31.313 CPU0: PCI: write request (data=0x0000ff10) for device 'C7200-IO-2FE(0)' at pc=0x6014d2d8: bus=1,device=1,function=0,reg=0x0c
+Jun 20 12:04:31.313 CPU0: PCI: write request (data=0x0000ff10) for device 'C7200-IO-2FE(0)' at pc=0x6014d2e4: bus=1,device=1,function=0,reg=0x0c
+Jun 20 12:04:31.338 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d41c: bus=1,device=1,function=0,reg=0x00
+Jun 20 12:04:31.338 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d420: bus=1,device=1,function=0,reg=0x00
+Jun 20 12:04:31.338 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d41c: bus=1,device=1,function=0,reg=0x08
+Jun 20 12:04:31.338 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d420: bus=1,device=1,function=0,reg=0x08
+Jun 20 12:04:31.398 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d41c: bus=1,device=0,function=0,reg=0x00
+Jun 20 12:04:31.398 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d420: bus=1,device=0,function=0,reg=0x00
+Jun 20 12:04:31.398 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d41c: bus=1,device=0,function=0,reg=0x00
+Jun 20 12:04:31.398 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d420: bus=1,device=0,function=0,reg=0x00
+Jun 20 12:04:31.398 CPU0: PCI: write request (data=0x00000156) for device 'C7200-IO-2FE(0)' at pc=0x6014d2d8: bus=1,device=0,function=0,reg=0x04
+Jun 20 12:04:31.398 CPU0: PCI: write request (data=0x00000156) for device 'C7200-IO-2FE(0)' at pc=0x6014d2e4: bus=1,device=0,function=0,reg=0x04
+Jun 20 12:04:31.398 CPU0: PCI: write request (data=0x480c0000) for device 'C7200-IO-2FE(0)' at pc=0x6014d2d8: bus=1,device=0,function=0,reg=0x10
+Jun 20 12:04:31.398 C7200-IO-2FE(0): registers are mapped at 0x480c0000
+Jun 20 12:04:31.398 CPU0: PCI: write request (data=0x480c0000) for device 'C7200-IO-2FE(0)' at pc=0x6014d2e4: bus=1,device=0,function=0,reg=0x10
+Jun 20 12:04:31.398 C7200-IO-2FE(0): registers are mapped at 0x480c0000
+Jun 20 12:04:31.398 CPU0: PCI: write request (data=0x00000000) for device 'C7200-IO-2FE(0)' at pc=0x6014d2d8: bus=1,device=0,function=0,reg=0x14
+Jun 20 12:04:31.398 CPU0: PCI: write request (data=0x00000000) for device 'C7200-IO-2FE(0)' at pc=0x6014d2e4: bus=1,device=0,function=0,reg=0x14
+Jun 20 12:04:31.398 CPU0: PCI: write request (data=0x0000ff10) for device 'C7200-IO-2FE(0)' at pc=0x6014d2d8: bus=1,device=0,function=0,reg=0x0c
+Jun 20 12:04:31.399 CPU0: PCI: write request (data=0x0000ff10) for device 'C7200-IO-2FE(0)' at pc=0x6014d2e4: bus=1,device=0,function=0,reg=0x0c
+Jun 20 12:04:31.400 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d41c: bus=1,device=0,function=0,reg=0x00
+Jun 20 12:04:31.400 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d420: bus=1,device=0,function=0,reg=0x00
+Jun 20 12:04:31.400 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d41c: bus=1,device=0,function=0,reg=0x08
+Jun 20 12:04:31.400 CPU0: PCI: read request for device 'C7200-IO-2FE(0)' at pc=0x6014d420: bus=1,device=0,function=0,reg=0x08
+Jun 20 12:04:31.418 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d41c: bus=5,device=0,function=0,reg=0x00
+Jun 20 12:04:31.418 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d420: bus=5,device=0,function=0,reg=0x00
+Jun 20 12:04:31.418 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d41c: bus=5,device=0,function=0,reg=0x00
+Jun 20 12:04:31.418 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d420: bus=5,device=0,function=0,reg=0x00
+Jun 20 12:04:31.418 CPU0: PCI: write request (data=0x00000156) for device 'PA-2FE-TX(1)' at pc=0x6014d2d8: bus=5,device=0,function=0,reg=0x04
+Jun 20 12:04:31.418 CPU0: PCI: write request (data=0x00000156) for device 'PA-2FE-TX(1)' at pc=0x6014d2e4: bus=5,device=0,function=0,reg=0x04
+Jun 20 12:04:31.418 CPU0: PCI: write request (data=0x48800000) for device 'PA-2FE-TX(1)' at pc=0x6014d2d8: bus=5,device=0,function=0,reg=0x10
+Jun 20 12:04:31.418 PA-2FE-TX(1): registers are mapped at 0x48800000
+Jun 20 12:04:31.418 CPU0: PCI: write request (data=0x48800000) for device 'PA-2FE-TX(1)' at pc=0x6014d2e4: bus=5,device=0,function=0,reg=0x10
+Jun 20 12:04:31.419 PA-2FE-TX(1): registers are mapped at 0x48800000
+Jun 20 12:04:31.419 CPU0: PCI: write request (data=0x00000000) for device 'PA-2FE-TX(1)' at pc=0x6014d2d8: bus=5,device=0,function=0,reg=0x14
+Jun 20 12:04:31.419 CPU0: PCI: write request (data=0x00000000) for device 'PA-2FE-TX(1)' at pc=0x6014d2e4: bus=5,device=0,function=0,reg=0x14
+Jun 20 12:04:31.419 CPU0: PCI: write request (data=0x0000ff10) for device 'PA-2FE-TX(1)' at pc=0x6014d2d8: bus=5,device=0,function=0,reg=0x0c
+Jun 20 12:04:31.419 CPU0: PCI: write request (data=0x0000ff10) for device 'PA-2FE-TX(1)' at pc=0x6014d2e4: bus=5,device=0,function=0,reg=0x0c
+Jun 20 12:04:31.420 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d41c: bus=5,device=0,function=0,reg=0x00
+Jun 20 12:04:31.421 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d420: bus=5,device=0,function=0,reg=0x00
+Jun 20 12:04:31.421 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d41c: bus=5,device=0,function=0,reg=0x08
+Jun 20 12:04:31.421 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d420: bus=5,device=0,function=0,reg=0x08
+Jun 20 12:04:31.438 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d41c: bus=5,device=1,function=0,reg=0x00
+Jun 20 12:04:31.438 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d420: bus=5,device=1,function=0,reg=0x00
+Jun 20 12:04:31.438 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d41c: bus=5,device=1,function=0,reg=0x00
+Jun 20 12:04:31.438 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d420: bus=5,device=1,function=0,reg=0x00
+Jun 20 12:04:31.438 CPU0: PCI: write request (data=0x00000156) for device 'PA-2FE-TX(1)' at pc=0x6014d2d8: bus=5,device=1,function=0,reg=0x04
+Jun 20 12:04:31.438 CPU0: PCI: write request (data=0x00000156) for device 'PA-2FE-TX(1)' at pc=0x6014d2e4: bus=5,device=1,function=0,reg=0x04
+Jun 20 12:04:31.438 CPU0: PCI: write request (data=0x48820000) for device 'PA-2FE-TX(1)' at pc=0x6014d2d8: bus=5,device=1,function=0,reg=0x10
+Jun 20 12:04:31.438 PA-2FE-TX(1): registers are mapped at 0x48820000
+Jun 20 12:04:31.438 CPU0: PCI: write request (data=0x48820000) for device 'PA-2FE-TX(1)' at pc=0x6014d2e4: bus=5,device=1,function=0,reg=0x10
+Jun 20 12:04:31.438 PA-2FE-TX(1): registers are mapped at 0x48820000
+Jun 20 12:04:31.438 CPU0: PCI: write request (data=0x00000000) for device 'PA-2FE-TX(1)' at pc=0x6014d2d8: bus=5,device=1,function=0,reg=0x14
+Jun 20 12:04:31.438 CPU0: PCI: write request (data=0x00000000) for device 'PA-2FE-TX(1)' at pc=0x6014d2e4: bus=5,device=1,function=0,reg=0x14
+Jun 20 12:04:31.438 CPU0: PCI: write request (data=0x0000ff10) for device 'PA-2FE-TX(1)' at pc=0x6014d2d8: bus=5,device=1,function=0,reg=0x0c
+Jun 20 12:04:31.438 CPU0: PCI: write request (data=0x0000ff10) for device 'PA-2FE-TX(1)' at pc=0x6014d2e4: bus=5,device=1,function=0,reg=0x0c
+Jun 20 12:04:31.440 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d41c: bus=5,device=1,function=0,reg=0x00
+Jun 20 12:04:31.440 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d420: bus=5,device=1,function=0,reg=0x00
+Jun 20 12:04:31.440 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d41c: bus=5,device=1,function=0,reg=0x08
+Jun 20 12:04:31.440 CPU0: PCI: read request for device 'PA-2FE-TX(1)' at pc=0x6014d420: bus=5,device=1,function=0,reg=0x08
+Jun 20 12:04:31.696 CPU0: JIT: partial JIT flush (count=823)
+Jun 20 12:04:32.024 CPU0: JIT: flushing data structures (compiled pages=999)
+Jun 20 12:04:33.117 CPU0: JIT: partial JIT flush (count=814)
+Jun 20 12:04:34.063 CPU0: JIT: flushing data structures (compiled pages=1009)
+Jun 20 12:04:34.459 CPU0: JIT: partial JIT flush (count=876)
+Jun 20 12:04:59.181 CPU0: JIT: flushing data structures (compiled pages=1028)
+Jun 20 12:04:59.760 CPU0: JIT: partial JIT flush (count=772)
+Jun 20 12:05:01.192 CPU0: JIT: flushing data structures (compiled pages=1031)
+Jun 20 12:05:03.146 CPU0: JIT: partial JIT flush (count=848)
+Jun 20 12:05:04.200 ROM: unhandled syscall 0x0000001a at pc=0x60648388 (a1=0x67eaab9c,a2=0x00000001,a3=0x00000000)
+Jun 20 12:05:04.200 ROM: unhandled syscall 0x00000009 at pc=0x60648388 (a1=0x00000001,a2=0x00000000,a3=0x00000000)
+Jun 20 12:05:04.334 CPU0: JIT: flushing data structures (compiled pages=1047)
+Jun 20 12:05:04.988 CPU0: JIT: partial JIT flush (count=816)
+Jun 20 12:05:05.016 ROM: trying to set bootvar 'BSI=0'
+Jun 20 12:05:05.020 ROM: trying to set bootvar 'BSI=-1'
+Jun 20 12:05:06.386 CPU0: JIT: flushing data structures (compiled pages=1066)
+Jun 20 12:05:06.876 CPU0: JIT: partial JIT flush (count=858)
+Jun 20 12:05:07.548 ROM: trying to read bootvar 'RANDOM_NUM'
+Jun 20 12:05:07.660 CPU0: JIT: flushing data structures (compiled pages=1091)
+Jun 20 12:05:32.093 CPU0: JIT: partial JIT flush (count=773)
+Jun 20 12:05:32.341 CPU0: JIT: flushing data structures (compiled pages=1110)
+Jun 20 12:05:32.675 CPU0: JIT: partial JIT flush (count=849)
+Jun 20 12:05:32.940 CPU0: JIT: flushing data structures (compiled pages=1142)
+Jun 20 12:05:33.218 CPU0: JIT: partial JIT flush (count=861)
+Jun 20 12:05:33.570 CPU0: JIT: flushing data structures (compiled pages=1180)
+Jun 20 12:05:33.929 CPU0: JIT: partial JIT flush (count=808)
+Jun 20 12:05:34.597 CPU0: JIT: flushing data structures (compiled pages=1206)
+Jun 20 12:05:34.765 ROM: trying to set bootvar 'BSI=0'
+Jun 20 12:05:34.768 ROM: trying to read bootvar 'RET_2_RCALTS'
+Jun 20 12:05:34.768 ROM: trying to set bootvar 'RET_2_RCALTS='
+Jun 20 12:05:35.064 CPU0: JIT: partial JIT flush (count=808)
+Jun 20 12:05:58.118 CPU0: JIT: flushing data structures (compiled pages=1286)
+Jun 20 12:06:16.677 CPU0: JIT: partial JIT flush (count=773)
+Jun 20 12:08:15.778 ROM: trying to set bootvar 'RANDOM_NUM=1300492417'
+Jun 20 12:27:53.799 C7200_STOP: stopping simulation.
+Jun 20 12:27:53.799 CPU0: CPU_STATE: Halting CPU (old state=0)...
+Jun 20 12:27:53.890 VM: shutdown procedure engaged.
+Jun 20 12:27:53.890 VM_OBJECT: Shutdown of object "io_fpga"
+Jun 20 12:27:53.890 DEVICE: Removal of device io_fpga, fd=-1, host_addr=0x0, flags=0
+Jun 20 12:27:53.890 VM_OBJECT: Shutdown of object "mp_fpga"
+Jun 20 12:27:53.890 DEVICE: Removal of device mp_fpga, fd=-1, host_addr=0x0, flags=0
+Jun 20 12:27:53.890 VM_OBJECT: Shutdown of object "clpd6729"
+Jun 20 12:27:53.890 VM_OBJECT: Shutdown of object "mem_bswap"
+Jun 20 12:27:53.890 DEVICE: Removal of device mem_bswap, fd=-1, host_addr=0x0, flags=0
+Jun 20 12:27:53.890 VM_OBJECT: Shutdown of object "rom"
+Jun 20 12:27:53.890 DEVICE: Removal of device rom, fd=-1, host_addr=0x0, flags=2
+Jun 20 12:27:53.890 VM_OBJECT: Shutdown of object "ram"
+Jun 20 12:27:53.890 DEVICE: Removal of device ram, fd=16, host_addr=0xda020000, flags=2
+Jun 20 12:27:53.890 MMAP: unmapping of device 'ram', fd=16, host_addr=0xda020000, len=0x10000000
+Jun 20 12:27:53.967 VM_OBJECT: Shutdown of object "gt64120"
+Jun 20 12:27:53.967 DEVICE: Removal of device gt64120, fd=-1, host_addr=0x0, flags=0
+Jun 20 12:27:53.967 VM_OBJECT: Shutdown of object "iomem"
+Jun 20 12:27:53.967 DEVICE: Removal of device iomem, fd=15, host_addr=0xea020000, flags=2
+Jun 20 12:27:53.967 MMAP: unmapping of device 'iomem', fd=15, host_addr=0xea020000, len=0x10000000
+Jun 20 12:27:53.976 VM_OBJECT: Shutdown of object "zero"
+Jun 20 12:27:53.976 DEVICE: Removal of device zero, fd=-1, host_addr=0x0, flags=0
+Jun 20 12:27:53.976 VM_OBJECT: Shutdown of object "nvram"
+Jun 20 12:27:53.976 DEVICE: Removal of device nvram, fd=14, host_addr=0xfa020000, flags=9
+Jun 20 12:27:53.976 MMAP: unmapping of device 'nvram', fd=14, host_addr=0xfa020000, len=0x80000
+Jun 20 12:27:53.977 VM_OBJECT: Shutdown of object "bootflash"
+Jun 20 12:27:53.977 DEVICE: Removal of device bootflash, fd=13, host_addr=0xfa0a0000, flags=1
+Jun 20 12:27:53.977 MMAP: unmapping of device 'bootflash', fd=13, host_addr=0xfa0a0000, len=0x800000
+Jun 20 12:27:53.978 VM_OBJECT: Shutdown of object "remote_ctrl"
+Jun 20 12:27:53.978 DEVICE: Removal of device remote_ctrl, fd=-1, host_addr=0x0, flags=0
+Jun 20 12:27:53.978 VM: removing PCI busses.
+Jun 20 12:27:53.978 DEVICE: Removal of device pci_io, fd=-1, host_addr=0x0, flags=0
+Jun 20 12:27:53.978 VM: deleting VTTY.
+Jun 20 12:27:53.978 VTTY: Console port: closing FD 12
+Jun 20 12:27:53.978 VM: deleting system CPUs.
+Jun 20 12:27:53.978 CPU0: CPU_STATE: Halting CPU (old state=1)...
+Jun 20 12:27:54.008 VM: shutdown procedure completed.
