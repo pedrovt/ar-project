@@ -17,11 +17,11 @@
 # SCIENTIFIC_SWL3
 
 conf t
-access-list 181 permit udp any any ip 10.90.128.0
-access-list 213 permit udp any any ip 10.106.128.0
+access-list 181 permit udp 10.90.128.0 0.0.127.255 any
+access-list 193 permit udp 10.106.128.0 0.0.127.255 any
 
 class-map match-all EF
-class-map match-all 213
+class-map match-all 193
 class-map match-all AF11
 class-map match-all 181
 
@@ -88,11 +88,11 @@ write
 # SERVICES_SWL3
 
 conf t
-access-list 182 permit udp any any ip 10.91.0.0
-access-list 214 permit udp any any ip 10.107.0.0
+access-list 182 permit udp ip 10.91.0.0 0.0.127.255 any
+access-list 194 permit udp ip 10.107.0.0 0.0.127.255 any
 
 class-map match-all AF11
-class-map match-all 214
+class-map match-all 194
 class-map match-all AF23
 class-map match-all 182
 
