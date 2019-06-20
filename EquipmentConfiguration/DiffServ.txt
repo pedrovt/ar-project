@@ -1,0 +1,193 @@
+#
+# ===== DiffServ QoS =====
+#
+# - Premium Class (EF)
+# VLAN 213 (PC Investigador Scientific) - 10.106.128.0/17
+#
+#  - Gold Class (AF11)
+# VLAN 181 (VoIP Investigador Scientific) - 10.90.128.0/17
+# VLAN 214 (PC Investigador Services) - 10.107.0.0/17
+#
+#  - Silver Class (AF23)
+# VLAN 182 (VoIP Investigador Services) - 10.91.0.0/17
+#
+
+#====================================================================================================
+
+# SCIENTIFIC_SWL3
+
+conf t
+access-list 181 permit udp any any ip 10.90.128.0
+access-list 213 permit udp any any ip 10.106.128.0
+
+class-map match-all EF
+class-map match-all 213
+class-map match-all AF11
+class-map match-all 181
+
+end
+write
+
+conf t
+policy-map IN_SCI
+class EF
+set ip dscp 46
+class AF11
+set ip dscp 10
+class AF23
+set ip dscp 22
+
+end
+write
+
+conf t
+int VLAN 181
+service-policy input IN_SCI
+int VLAN 213
+service-policy input IN_SCI
+
+end
+write
+
+conf t
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all GOLD
+match ip dscp 10
+class-map match-all SILVER
+match ip dscp 22
+class-map match-all BEST-EFFORT
+match ip dscp 0
+
+end
+write
+
+conf t
+policy-map OUT_SCI
+class PREMIUM
+priority percent 40
+class GOLD
+bandwidth percent 20
+class SILVER
+bandwidth percent 15
+class BEST-EFFORT
+police 16000 2000 2000 conform-action set-dscp-transmit 0
+
+end
+write
+
+conf t
+int VLAN 224
+service-policy output OUT_SCI
+
+end
+write
+
+#====================================================================================================
+
+# SERVICES_SWL3
+
+conf t
+access-list 182 permit udp any any ip 10.91.0.0
+access-list 214 permit udp any any ip 10.107.0.0
+
+class-map match-all AF11
+class-map match-all 214
+class-map match-all AF23
+class-map match-all 182
+
+end
+write
+
+conf t
+policy-map IN_SER
+class EF
+set ip dscp 46
+class AF11
+set ip dscp 10
+class AF23
+set ip dscp 22
+
+end
+write
+
+conf t
+int VLAN 182
+service-policy input IN_SER
+int VLAN 214
+service-policy input IN_SER
+
+end
+write
+
+conf t
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all GOLD
+match ip dscp 10
+class-map match-all SILVER
+match ip dscp 22
+class-map match-all BEST-EFFORT
+match ip dscp 0
+
+end
+write
+
+conf t
+policy-map OUT_SER
+class PREMIUM
+priority percent 40
+class GOLD
+bandwidth percent 20
+class SILVER
+bandwidth percent 15
+class BEST-EFFORT
+police 16000 2000 2000 conform-action set-dscp-transmit 0
+
+end
+write
+
+conf t
+int VLAN 224
+service-policy output OUT_SER
+
+end
+write
+
+#====================================================================================================
+
+# AV_SWL3
+
+conf t
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all GOLD
+match ip dscp 10
+class-map match-all SILVER
+match ip dscp 22
+class-map match-all BEST-EFFORT
+match ip dscp 0
+
+end
+write
+
+conf t
+policy-map OUT_AV
+class PREMIUM
+priority percent 40
+class GOLD
+bandwidth percent 20
+class SILVER
+bandwidth percent 15
+class BEST-EFFORT
+police 16000 2000 2000 conform-action set-dscp-transmit 0
+
+end
+write
+
+conf t
+int VLAN 224
+service-policy output OUT_AV
+
+end
+write
