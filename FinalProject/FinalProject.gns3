@@ -966,8 +966,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/0",
-                            "x": 59,
-                            "y": 45
+                            "x": 123,
+                            "y": 63
                         },
                         "node_id": "098f7117-4e70-4166-a630-75e698edd6f2",
                         "port_number": 0
@@ -2219,7 +2219,7 @@
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
                 "x": -258,
-                "y": -172,
+                "y": -173,
                 "z": 1
             },
             {
@@ -2282,8 +2282,8 @@
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
-                "x": -258,
-                "y": -22,
+                "x": -259,
+                "y": -23,
                 "z": 1
             },
             {
